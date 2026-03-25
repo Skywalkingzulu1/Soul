@@ -1,0 +1,28 @@
+name: Health Check
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Every 5 minutes
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Cloudflare
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://andile-skywalkingzulu.skywalkingzulu.workers.dev/ --max-time 10 || echo "000")
+          echo "Cloudflare: $response"
+          if [ "$response" != "200" ]; then exit 1; fi
+      
+      - name: Check Railway
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://andile-skywalkingzulu.up.railway.app/ --max-time 10 || echo "000")
+          echo "Railway: $response"
+          if [ "$response" != "200" ]; then exit 1; fi
+      
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "Andile is down! Manual intervention needed."
+          # Could add Telegram/Discord notification here
