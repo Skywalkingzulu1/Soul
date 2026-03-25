@@ -1,3 +1,53 @@
 {
-  "_deprecated": "All credentials have been moved to the .env file and soul/core/config.py to prevent accidental commits and hallucinations."
+  "accounts": [
+    {
+      "platform": "GitHub",
+      "username": "Skywalkingzulu1",
+      "status": "active",
+      "icon": "\ud83d\udc19"
+    },
+    {
+      "platform": "Impossible Cloud",
+      "username": "andilexmchunu",
+      "status": "active",
+      "icon": "\u2601\ufe0f"
+    },
+    {
+      "platform": "Gmail",
+      "username": "andilexmchunu",
+      "status": "active",
+      "icon": "\ud83d\udce7"
+    },
+    {
+      "platform": "Twitter",
+      "username": "",
+      "status": "inactive",
+      "icon": "\ud83d\udc26"
+    },
+    {
+      "platform": "Discord",
+      "username": "",
+      "status": "inactive",
+      "icon": "\ud83d\udcac"
+    },
+    {
+      "platform": "Telegram",
+      "username": "",
+      "status": "inactive",
+      "icon": "\u2708\ufe0f"
+    },
+    {
+      "platform": "LinkedIn",
+      "username": "",
+      "status": "inactive",
+      "icon": "\ud83d\udcbc"
+    },
+    {
+      "platform": "Medium",
+      "username": "",
+      "status": "inactive",
+      "icon": "\ud83d\udcdd"
+    }
+  ],
+  "last_updated": "2026-03-25T19:00:00"
 }
