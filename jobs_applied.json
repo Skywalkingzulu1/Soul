@@ -259,7 +259,8 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:40.882544"
+      "applied_at": "2026-03-24T15:22:40.882544",
+      "application_sent": true
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -339,7 +340,8 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "notes": "Stablecoin company - remote friendly"
+      "notes": "Stablecoin company - remote friendly",
+      "application_sent": true
     },
     {
       "title": "Backend Engineer",
@@ -359,7 +361,8 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "notes": "Major crypto exchange"
+      "notes": "Major crypto exchange",
+      "application_sent": true
     },
     {
       "title": "Software Engineer",
@@ -389,17 +392,19 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "DevOps"
+      "category": "DevOps",
+      "application_sent": true
     },
     {
       "title": "Backend Developer",
       "company": "DigitalOcean",
       "email": "careers@digitalocean.com",
       "url": "https://careers.digitalocean.com/",
-      "applied": false,
+      "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "Cloud"
+      "category": "Cloud",
+      "application_sent": true
     },
     {
       "title": "Python Developer",
@@ -426,20 +431,22 @@
       "company": "Spotify",
       "email": "jobs@spotify.com",
       "url": "https://jobs.spotify.com/",
-      "applied": false,
+      "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "Music"
+      "category": "Music",
+      "application_sent": true
     },
     {
       "title": "Python Developer",
       "company": "Notion",
       "email": "jobs@notion.so",
       "url": "https://notion.so/careers",
-      "applied": false,
+      "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "Productivity"
+      "category": "Productivity",
+      "application_sent": true
     },
     {
       "title": "Senior Backend Engineer",
@@ -459,27 +466,30 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "Fintech"
+      "category": "Fintech",
+      "application_sent": true
     },
     {
       "title": "Backend Developer",
       "company": "Plaid",
       "email": "jobs@plaid.com",
       "url": "https://plaid.com/careers/",
-      "applied": false,
+      "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "Fintech"
+      "category": "Fintech",
+      "application_sent": true
     },
     {
       "title": "Software Engineer",
       "company": "Airbnb",
       "email": "jobs@airbnb.com",
       "url": "https://careers.airbnb.com/",
-      "applied": false,
+      "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "category": "Travel"
+      "category": "Travel",
+      "application_sent": true
     }
   ]
 }
