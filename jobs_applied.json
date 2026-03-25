@@ -1,0 +1,335 @@
+{
+  "last_updated": "2026-03-24T15:29:27.648272",
+  "jobs": [
+    {
+      "title": "Remote Python Developer #1",
+      "company": "TechCorp 1",
+      "email": "apply1@techcompany1.example",
+      "url": "https://techcompany1.example/jobs/1",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Backend Engineer #2",
+      "company": "DataFlow Inc 2",
+      "email": "apply2@techcompany2.example",
+      "url": "https://techcompany2.example/jobs/2",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Full Stack Developer #3",
+      "company": "WebStack 3",
+      "email": "apply3@techcompany3.example",
+      "url": "https://techcompany3.example/jobs/3",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Software Engineer #4",
+      "company": "CodeBase 4",
+      "email": "apply4@techcompany4.example",
+      "url": "https://techcompany4.example/jobs/4",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Data Engineer #5",
+      "company": "DataSync 5",
+      "email": "apply5@techcompany5.example",
+      "url": "https://techcompany5.example/jobs/5",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Python Developer #6",
+      "company": "TechCorp 6",
+      "email": "apply6@techcompany6.example",
+      "url": "https://techcompany6.example/jobs/6",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Backend Engineer #7",
+      "company": "DataFlow Inc 7",
+      "email": "apply7@techcompany7.example",
+      "url": "https://techcompany7.example/jobs/7",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Full Stack Developer #8",
+      "company": "WebStack 8",
+      "email": "apply8@techcompany8.example",
+      "url": "https://techcompany8.example/jobs/8",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Software Engineer #9",
+      "company": "CodeBase 9",
+      "email": "apply9@techcompany9.example",
+      "url": "https://techcompany9.example/jobs/9",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Data Engineer #10",
+      "company": "DataSync 10",
+      "email": "apply10@techcompany10.example",
+      "url": "https://techcompany10.example/jobs/10",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Python Developer #11",
+      "company": "TechCorp 11",
+      "email": "apply11@techcompany11.example",
+      "url": "https://techcompany11.example/jobs/11",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Backend Engineer #12",
+      "company": "DataFlow Inc 12",
+      "email": "apply12@techcompany12.example",
+      "url": "https://techcompany12.example/jobs/12",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Full Stack Developer #13",
+      "company": "WebStack 13",
+      "email": "apply13@techcompany13.example",
+      "url": "https://techcompany13.example/jobs/13",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Software Engineer #14",
+      "company": "CodeBase 14",
+      "email": "apply14@techcompany14.example",
+      "url": "https://techcompany14.example/jobs/14",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Data Engineer #15",
+      "company": "DataSync 15",
+      "email": "apply15@techcompany15.example",
+      "url": "https://techcompany15.example/jobs/15",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Python Developer #16",
+      "company": "TechCorp 16",
+      "email": "apply16@techcompany16.example",
+      "url": "https://techcompany16.example/jobs/16",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Backend Engineer #17",
+      "company": "DataFlow Inc 17",
+      "email": "apply17@techcompany17.example",
+      "url": "https://techcompany17.example/jobs/17",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Full Stack Developer #18",
+      "company": "WebStack 18",
+      "email": "apply18@techcompany18.example",
+      "url": "https://techcompany18.example/jobs/18",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Software Engineer #19",
+      "company": "CodeBase 19",
+      "email": "apply19@techcompany19.example",
+      "url": "https://techcompany19.example/jobs/19",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Remote Data Engineer #20",
+      "company": "DataSync 20",
+      "email": "apply20@techcompany20.example",
+      "url": "https://techcompany20.example/jobs/20",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "VALR",
+      "email": "careers@valr.com",
+      "url": "https://valr.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:21.036589"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "TymeBank",
+      "email": "careers@tymebank.co.za",
+      "url": "https://tymebank.co.za",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:24.139615"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Onafriq",
+      "email": "careers@onafriq.com",
+      "url": "https://onafriq.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:27.090656"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Ozow",
+      "email": "careers@ozow.com",
+      "url": "https://ozow.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:29.899084"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Centbee",
+      "email": "careers@centbee.com",
+      "url": "https://centbee.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:32.675150"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "AltCoinTrader",
+      "email": "careers@altcointrader.co.za",
+      "url": "https://altcointrader.co.za",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:35.369573"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Lynk Ware",
+      "email": "careers@lynkware.com",
+      "url": "https://lynkware.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:38.203997"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Tether",
+      "email": "careers@tether.to",
+      "url": "https://tether.to",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:40.882544"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "FirstRand",
+      "email": "recruitment@firstrand.co.za",
+      "url": "https://firstrand.co.za",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:43.633395"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Stitch Money",
+      "email": "careers@stitch.money",
+      "url": "https://stitch.money",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:22:46.454319"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "VALR",
+      "email": "careers@valr.com",
+      "url": "https://valr.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:25:49.525101"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "TymeBank",
+      "email": "careers@tymebank.co.za",
+      "url": "https://tymebank.co.za",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:26:42.454752"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Onafriq",
+      "email": "careers@onafriq.com",
+      "url": "https://onafriq.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:27:17.271749"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Ozow",
+      "email": "careers@ozow.com",
+      "url": "https://ozow.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:28:11.329770"
+    },
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "Centbee",
+      "email": "careers@centbee.com",
+      "url": "https://centbee.com",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "applied_at": "2026-03-24T15:29:27.646816"
+    }
+  ]
+}

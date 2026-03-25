@@ -15,3 +15,6 @@ screenshots/
 node_modules/
 .vscode/
 .idea/
+knowledge/*.json
+!knowledge/README.json
+web/orchestration.json
