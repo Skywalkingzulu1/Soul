@@ -1,0 +1,14 @@
+{
+  "$schema": "https://railway.app/schema.json",
+  "name": "andile-skywalkingzulu",
+  "build": {
+    "builder": "NIXPACKS_V1_PYTHON"
+  },
+  "run": {
+    "command": "python -c \"from soul.andile_service import run_andile_service; import asyncio; asyncio.run(run_andile_service('railway'))\""
+  },
+  "environment": {
+    "OLLAMA_HOST": "http://localhost:11434",
+    "ANDILE_LOCATION": "railway"
+  }
+}
