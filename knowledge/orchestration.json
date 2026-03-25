@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-25T12:27:33.277456",
+  "participants": {
+    "opencode": {
+      "role": "reasoning",
+      "status": "active",
+      "last_action": null
+    },
+    "gemini": {
+      "role": "execution",
+      "status": "ready",
+      "last_command": null,
+      "last_result": null
+    },
+    "andile": {
+      "role": "digital_twin",
+      "status": "training",
+      "cloud_endpoint": "http://localhost:11434",
+      "model": "gpt-oss:120b-cloud",
+      "memory_count": 0,
+      "goals": {
+        "get_paid": {
+          "status": "active",
+          "jobs_applied": 0,
+          "jobs_responded": 0,
+          "bounties_found": 0,
+          "bounties_claimed": 0,
+          "income_earned": 0,
+          "bounty_earnings": 0,
+          "repos_tracked": [
+            "pancakeswap/pancake-frontend",
+            "uniswap/uniswap-v3-core"
+          ],
+          "last_action": "bounties_checked_2026-03-25T12:27:33.277409"
+        },
+        "github_growth": {
+          "status": "active",
+          "prs_made": 1,
+          "prs_merged": 0,
+          "repos_targeted": [
+            "pancakeswap/pancake-frontend"
+          ],
+          "last_action": null
+        },
+        "crypto_growth": {
+          "status": "active",
+          "wallet_address": null,
+          "wallet_seed": null,
+          "airdrops_claimed": 0,
+          "total_value": 0,
+          "strategy": "airdrop_hunting",
+          "last_action": null
+        }
+      }
+    }
+  },
+  "messages": [],
+  "tasks": [],
+  "activity_log": []
+}

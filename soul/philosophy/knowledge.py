@@ -1154,6 +1154,43 @@ def get_philosophy_knowledge():
         ]
     )
 
+    concepts.extend(
+        [
+            (
+                "gh-actions-approve-fork-001",
+                "GitHub Actions Fork Approval — Workflow runs from fork PRs require manual approval. Maintainers with write access must approve workflows before they run. This is a security measure for public forks.",
+                "devops",
+                "github",
+                0.95,
+                "PR workflow security",
+            ),
+            (
+                "gh-actions-approve-fork-002",
+                "Approving Fork Workflows — Go to Pull Requests tab, click the PR, inspect files for malicious .github/workflows/ changes, then click 'Approve workflows to run' in the Conversation tab.",
+                "devops",
+                "github",
+                0.9,
+                "How to approve",
+            ),
+            (
+                "gh-actions-approve-fork-003",
+                "Workflow Approval Timeout — Workflows awaiting approval for more than 30 days are automatically deleted. Contributors must wait for maintainer approval to run CI/CD.",
+                "devops",
+                "github",
+                0.8,
+                "Time limit awareness",
+            ),
+            (
+                "gh-actions-fork-security-004",
+                "Fork Security Best Practice — Always inspect .github/workflows/ directory changes in fork PRs before approving. Malicious workflows could exfiltrate secrets or compromise the repository.",
+                "devops",
+                "github",
+                0.95,
+                "Security critical",
+            ),
+        ]
+    )
+
     return concepts
 
 
