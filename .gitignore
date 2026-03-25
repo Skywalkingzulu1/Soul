@@ -5,9 +5,11 @@ __pycache__/
 *.db-shm
 *.db-wal
 chroma_db/
+chroma_db_persist/
 chroma_db_security/
 sessions/
 screenshots/
+logs/
 .env
 *.zip
 *.png
