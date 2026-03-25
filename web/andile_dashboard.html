@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andile Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        :root {
+            --bg: #0a0a0f;
+            --card-bg: #12121a;
+            --border: #1e1e2e;
+            --text: #e4e4e7;
+            --text-dim: #71717a;
+            --accent: #f97316;
+            --accent-dim: #f9731620;
+            --success: #22c55e;
+            --warning: #eab308;
+            --danger: #ef4444;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1 { font-size: 1.8rem; display: flex; align-items: center; gap: 10px; }
+        h1 span { color: var(--accent); }
+        
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            background: var(--accent-dim);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .card h2 {
+            font-size: 1rem;
+            color: var(--text-dim);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .card h2 .icon { font-size: 1.2rem; }
+        
+        .goal { margin-bottom: 15px; }
+        .goal-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+        .goal-name { font-weight: 600; }
+        .goal-status { 
+            font-size: 0.8rem; 
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--success);
+            color: #000;
+        }
+        
+        .stat { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px; }
+        .stat-value { color: var(--accent); font-weight: 600; }
+        
+        .wallet-address {
+            font-family: monospace;
+            background: var(--border);
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            word-break: break-all;
+            color: var(--success);
+        }
+        
+        .activity-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .activity-item {
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+        .activity-item:last-child { border-bottom: none; }
+        .activity-time { color: var(--text-dim); font-size: 0.75rem; }
+        .activity-actor { color: var(--accent); font-weight: 600; }
+        
+        .progress-bar {
+            height: 6px;
+            background: var(--border);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), #fb923c);
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        button {
+            background: var(--card-bg);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        button:hover {
+            background: var(--accent);
+            color: #000;
+        }
+        
+        .refresh-info {
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+        
+        .pr-link {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .pr-link:hover { text-decoration: underline; }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .live { animation: pulse 2s infinite; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Andile <span>Digital Twin</span></h1>
+            <span class="status-badge live">● Live</span>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <h2><span class="icon">💰</span> Get Paid</h2>
+                <div class="goal">
+                    <div class="goal-header">
+                        <span class="goal-name">Income Progress</span>
+                        <span class="goal-status">Active</span>
+                    </div>
+                    <div class="stat">
+                        <span>Jobs Applied</span>
+                        <span class="stat-value" id="jobsApplied">0</span>
+                    </div>
+                    <div class="stat">
+                        <span>Bounties Found</span>
+                        <span class="stat-value" id="bountiesFound">0</span>
+                    </div>
+                    <div class="stat">
+                        <span>Income Earned</span>
+                        <span class="stat-value" id="incomeEarned">$0</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="incomeProgress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2><span class="icon">🐙</span> GitHub Growth</h2>
+                <div class="goal">
+                    <div class="goal-header">
+                        <span class="goal-name">Pull Requests</span>
+                        <span class="goal-status">Active</span>
+                    </div>
+                    <div class="stat">
+                        <span>PRs Made</span>
+                        <span class="stat-value" id="prsMade">0</span>
+                    </div>
+                    <div class="stat">
+                        <span>PRs Merged</span>
+                        <span class="stat-value" id="prsMerged">0</span>
+                    </div>
+                    <div class="stat">
+                        <span>Target Repos</span>
+                        <span class="stat-value" id="targetRepos">-</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="prProgress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2><span class="icon">🪙</span> Crypto Growth</h2>
+                <div class="goal">
+                    <div class="goal-header">
+                        <span class="goal-name">Airdrop Hunting</span>
+                        <span class="goal-status">Active</span>
+                    </div>
+                    <div class="stat">
+                        <span>Wallet</span>
+                        <span class="stat-value" id="walletStatus">Not Created</span>
+                    </div>
+                    <div class="stat">
+                        <span>Airdrops Claimed</span>
+                        <span class="stat-value" id="airdropsClaimed">0</span>
+                    </div>
+                    <div class="stat">
+                        <span>Total Value</span>
+                        <span class="stat-value" id="cryptoValue">$0</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="cryptoProgress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="wallet-address" id="walletAddress" style="display:none"></div>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2><span class="icon">📋</span> Recent Activity</h2>
+                <div class="activity-list" id="activityList">
+                    <div class="activity-item">Loading...</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2><span class="icon">🎯</span> Tasks</h2>
+                <div class="activity-list" id="taskList">
+                    <div class="activity-item">No pending tasks</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button onclick="refreshData()">🔄 Refresh</button>
+            <button onclick="checkBounties()">💎 Check Bounties</button>
+            <button onclick="createWallet()">�钱包 Create Wallet</button>
+            <button onclick="viewOnGitHub()">🐙 View PR</button>
+        </div>
+        
+        <div class="refresh-info">
+            Auto-refreshing every 10 seconds | Last updated: <span id="lastUpdate">-</span>
+        </div>
+    </div>
+    
+    <script>
+        const ORCHESTRATION_FILE = '../knowledge/orchestration.json';
+        
+        async function loadJSON(url) {
+            try {
+                const response = await fetch(url);
+                return await response.json();
+            } catch (e) {
+                console.error('Error loading:', url, e);
+                return null;
+            }
+        }
+        
+        function formatTime(isoString) {
+            if (!isoString) return '-';
+            const date = new Date(isoString);
+            return date.toLocaleTimeString();
+        }
+        
+        function formatDate(isoString) {
+            if (!isoString) return '-';
+            const date = new Date(isoString);
+            return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+        }
+        
+        async function refreshData() {
+            const data = await loadJSON(ORCHESTRATION_FILE);
+            if (!data) return;
+            
+            const andile = data.participants?.andile?.goals || {};
+            const getPaid = andile.get_paid || {};
+            const github = andile.github_growth || {};
+            const crypto = andile.crypto_growth || {};
+            
+            // Update Get Paid
+            document.getElementById('jobsApplied').textContent = getPaid.jobs_applied || 0;
+            document.getElementById('bountiesFound').textContent = getPaid.bounties_found || 0;
+            document.getElementById('incomeEarned').textContent = '$' + (getPaid.income_earned || 0);
+            
+            // Update GitHub
+            document.getElementById('prsMade').textContent = github.prs_made || 0;
+            document.getElementById('prsMerged').textContent = github.prs_merged || 0;
+            document.getElementById('targetRepos').textContent = (github.repos_targeted || []).join(', ') || '-';
+            
+            // Update Crypto
+            if (crypto.wallet_address) {
+                document.getElementById('walletStatus').textContent = 'Created';
+                document.getElementById('walletAddress').textContent = crypto.wallet_address;
+                document.getElementById('walletAddress').style.display = 'block';
+            } else {
+                document.getElementById('walletStatus').textContent = 'Not Created';
+                document.getElementById('walletAddress').style.display = 'none';
+            }
+            document.getElementById('airdropsClaimed').textContent = crypto.airdrops_claimed || 0;
+            document.getElementById('cryptoValue').textContent = '$' + (crypto.total_value || 0);
+            
+            // Progress bars (mock milestones)
+            const incomePct = Math.min(100, (getPaid.income_earned || 0) / 100 * 100);
+            document.getElementById('incomeProgress').style.width = incomePct + '%';
+            
+            const prPct = github.prs_merged ? Math.min(100, github.prs_merged / 5 * 100) : 10;
+            document.getElementById('prProgress').style.width = prPct + '%';
+            
+            const cryptoPct = crypto.airdrops_claimed ? Math.min(100, crypto.airdrops_claimed / 3 * 100) : 5;
+            document.getElementById('cryptoProgress').style.width = cryptoPct + '%';
+            
+            // Activity log
+            const activities = data.activity_log || [];
+            const activityList = document.getElementById('activityList');
+            if (activities.length === 0) {
+                activityList.innerHTML = '<div class="activity-item">No activity yet</div>';
+            } else {
+                activityList.innerHTML = activities.slice(-10).reverse().map(a => `
+                    <div class="activity-item">
+                        <div><span class="activity-actor">${a.actor}</span> ${a.action}</div>
+                        <div class="activity-time">${formatTime(a.timestamp)}</div>
+                    </div>
+                `).join('');
+            }
+            
+            // Tasks
+            const tasks = data.tasks || [];
+            const pendingTasks = tasks.filter(t => t.status === 'pending');
+            const taskList = document.getElementById('taskList');
+            if (pendingTasks.length === 0) {
+                taskList.innerHTML = '<div class="activity-item">No pending tasks</div>';
+            } else {
+                taskList.innerHTML = pendingTasks.map(t => `
+                    <div class="activity-item">
+                        <div>${t.task}</div>
+                        <div class="activity-time">Assigned: ${t.assigned_to} | ${formatTime(t.created_at)}</div>
+                    </div>
+                `).join('');
+            }
+            
+            document.getElementById('lastUpdate').textContent = formatDate(data.last_updated);
+        }
+        
+        async function checkBounties() {
+            const btn = event.target;
+            btn.textContent = '⏳ Checking...';
+            btn.disabled = true;
+            
+            try {
+                const response = await fetch('andile_cmd.py?action=bounties', {
+                    method: 'POST'
+                });
+                await refreshData();
+            } catch (e) {
+                alert('Error checking bounties. Run manually: python andile_cmd.py github bounties');
+            }
+            
+            btn.textContent = '💎 Check Bounties';
+            btn.disabled = false;
+        }
+        
+        async function createWallet() {
+            if (!confirm('Create new crypto wallet for airdrops?')) return;
+            
+            const btn = event.target;
+            btn.textContent = '⏳ Creating...';
+            
+            try {
+                const response = await fetch('andile_cmd.py?action=wallet_create', {
+                    method: 'POST'
+                });
+                await refreshData();
+                alert('Wallet created!');
+            } catch (e) {
+                alert('Error. Run manually: python andile_cmd.py wallet create');
+            }
+            
+            btn.textContent = '🪙 Create Wallet';
+        }
+        
+        function viewOnGitHub() {
+            window.open('https://github.com/pancakeswap/pancake-frontend/pull/12774', '_blank');
+        }
+        
+        // Auto-refresh every 10 seconds
+        refreshData();
+        setInterval(refreshData, 10000);
+    </script>
+</body>
+</html>
