@@ -13,6 +13,13 @@ const ANDILE_IDENTITY = {
   owner: "Andile Sizophila Mchunu"
 };
 
+// In-memory state (resets on worker restart)
+let andileState = {
+  status: "initializing",
+  cycles: 0,
+  last_update: null
+};
+
 // Simple response generator (no LLM - would need external API)
 async function handleRequest(request) {
   const url = new URL(request.url);
@@ -31,6 +38,8 @@ async function handleRequest(request) {
   
   // Routes
   if (path === "/") {
+    andileState.status = "active";
+    andileState.last_update = new Date().toISOString();
     return new Response(JSON.stringify({
       status: "active",
       andile: ANDILE_IDENTITY,
@@ -48,13 +57,11 @@ async function handleRequest(request) {
   }
   
   if (path === "/status") {
-    // Get state from KV
-    const state = await ANDILE_STATE.get("state");
     return new Response(JSON.stringify({
       status: "running",
       location: "cloudflare_workers",
       identity: ANDILE_IDENTITY,
-      state: state ? JSON.parse(state) : null,
+      state: andileState,
       timestamp: new Date().toISOString()
     }, null, 2), {
       headers: { ...corsHeaders, "Content-Type": "application/json" }
