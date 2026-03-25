@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.db-shm
+*.db-wal
+chroma_db/
+chroma_db_security/
+sessions/
+screenshots/
+.env
+*.zip
+*.png
+.DS_Store
+node_modules/
+.vscode/
+.idea/
