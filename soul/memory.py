@@ -71,7 +71,7 @@ class Memory:
             try:
                 import chromadb
 
-                chroma_path = os.path.join(os.path.dirname(self.db_path), "chroma_db")
+                chroma_path = os.path.join(os.path.dirname(self.db_path), "chroma_db_persist")
                 client = chromadb.PersistentClient(path=chroma_path)
                 self._collection = client.get_or_create_collection(
                     name="soul_memories",

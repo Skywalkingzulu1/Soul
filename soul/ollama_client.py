@@ -2,9 +2,10 @@
 
 import requests
 import os
-import logging
+from soul.core.logger import setup_logger
+from soul.core.config import identity
 
-logger = logging.getLogger(__name__)
+logger = setup_logger(__name__)
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 DEFAULT_MODEL = "gpt-oss:120b-cloud"
@@ -35,8 +36,12 @@ def generate(
         "stream": False,
     }
 
+    # Inject absolute identity
+    absolute_system = identity.absolute_system_prompt
     if system:
-        payload["system"] = system
+        payload["system"] = f"{absolute_system}\n\n{system}"
+    else:
+        payload["system"] = absolute_system
 
     # Set default options if not provided
     if "options" not in payload:
