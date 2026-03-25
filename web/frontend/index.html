@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andile | Digital Twin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <span class="pulse-dot"></span>
+                <h1>ANDILE <span class="twin-tag">DIGITAL TWIN</span></h1>
+            </div>
+            <div class="status-bar">
+                <div class="stat"><span class="label">UPTIME</span> <span id="uptime">00:00:00</span></div>
+                <div class="stat"><span class="label">MEMORIES</span> <span id="memory-count">0</span></div>
+                <div class="stat"><span class="label">VISION</span> <span id="vision-count">0</span></div>
+                <div class="stat"><span class="label">STATE</span> <span id="soul-state" class="state-badge">IDLE</span></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="left-panel">
+                <div class="avatar-container">
+                    <div id="avatar" class="avatar state-idle">
+                        <div class="avatar-ring"></div>
+                        <div id="avatar-svg">
+                            <!-- Dynamic SVG avatar loads here -->
+                        </div>
+                        <div class="avatar-overlay">
+                            <span id="current-tool">IDLE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h2 id="profile-name">Andile Sizophila Mchunu</h2>
+                    <p class="moniker" id="profile-moniker">Skywalkingzulu</p>
+                    <p class="focus" id="profile-focus">Web3 / DeFi</p>
+                    <div class="last-action-box">
+                        <span class="label">LAST ACTION</span>
+                        <p id="last-action">Initializing...</p>
+                    </div>
+                </div>
+
+                <div class="vision-panel">
+                    <h3>VISION</h3>
+                    <div class="vision-status" id="vision-status">
+                        <span class="vision-indicator"></span>
+                        <span>Screen capture ready</span>
+                    </div>
+                    <div class="vision-summary" id="vision-summary">
+                        No screen data yet.
+                    </div>
+                    <button onclick="captureScreen()" class="btn btn-primary">CAPTURE SCREEN</button>
+                </div>
+
+                <div class="action-log-container">
+                    <h3>MISSION LOG</h3>
+                    <div id="action-log" class="action-log"></div>
+                </div>
+
+                <div class="manual-overrides">
+                    <h3>MANUAL OVERRIDES</h3>
+                    <div class="button-group">
+                        <button onclick="triggerScrub()" class="btn btn-danger">CLEAR HALLUCINATIONS</button>
+                        <button onclick="triggerAction('search web3 jobs')" class="btn btn-primary">RUN JOB HUNT</button>
+                        <button onclick="captureScreen()" class="btn btn-primary">CAPTURE SCREEN</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="right-panel">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="terminal-title">COMMAND INTERFACE</div>
+                    </div>
+                    <div id="terminal-output" class="terminal-output">
+                        <div class="msg bot">ANDILE SIZOPHILA DIGITAL TWIN ONLINE. READY.</div>
+                    </div>
+                    <div class="terminal-input-area">
+                        <span class="prompt">></span>
+                        <input type="text" id="user-input" placeholder="Type a command or message..." autocomplete="off">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="avatar.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
