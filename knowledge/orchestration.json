@@ -22,7 +22,7 @@
       "goals": {
         "get_paid": {
           "status": "active",
-          "jobs_applied": 35,
+          "jobs_applied": 50,
           "jobs_responded": 0,
           "bounties_found": 0,
           "bounties_claimed": 0,
@@ -32,7 +32,7 @@
             "pancakeswap/pancake-frontend",
             "uniswap/uniswap-v3-core"
           ],
-          "last_action": "tested_2026-03-25T18:45:00.000000"
+          "last_action": "application_targets_added_2026-03-25T18:51:00.000000"
         },
         "github_growth": {
           "status": "active",

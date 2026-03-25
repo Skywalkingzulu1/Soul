@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T15:29:27.648272",
+  "last_updated": "2026-03-25T18:52:00.000000",
   "jobs": [
     {
       "title": "Remote Python Developer #1",
@@ -330,6 +330,156 @@
       "response_received": false,
       "pdf_error": false,
       "applied_at": "2026-03-24T15:29:27.646816"
+    },
+    {
+      "title": "Senior Python Developer",
+      "company": "Tether",
+      "email": "careers@tether.to",
+      "url": "https://tether.to/careers/",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "notes": "Stablecoin company - remote friendly"
+    },
+    {
+      "title": "Backend Engineer",
+      "company": "Riot Platforms",
+      "email": "careers@riotplatforms.com",
+      "url": "https://careers.riotplatforms.com/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "notes": "Bitcoin mining - remote available"
+    },
+    {
+      "title": "Python Developer",
+      "company": "Coinbase",
+      "email": "jobs@coinbase.com",
+      "url": "https://www.coinbase.com/careers",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "notes": "Major crypto exchange"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Binance",
+      "email": "careers@binance.com",
+      "url": "https://careers.binance.com/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "notes": "Largest crypto exchange"
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Kraken",
+      "email": "jobs@kraken.com",
+      "url": "https://jobs.lever.co/Kraken",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "notes": "Crypto exchange"
+    },
+    {
+      "title": "Senior Python Engineer",
+      "company": "GitLab",
+      "email": "jobs@gitlab.com",
+      "url": "https://about.gitlab.com/jobs/",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "DevOps"
+    },
+    {
+      "title": "Backend Developer",
+      "company": "DigitalOcean",
+      "email": "careers@digitalocean.com",
+      "url": "https://careers.digitalocean.com/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Cloud"
+    },
+    {
+      "title": "Python Developer",
+      "company": "Cloudflare",
+      "email": "jobs@cloudflare.com",
+      "url": "https://careers.cloudflare.com/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Security"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Discord",
+      "email": "jobs@discord.com",
+      "url": "https://discord.com/careers",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Social"
+    },
+    {
+      "title": "Backend Engineer",
+      "company": "Spotify",
+      "email": "jobs@spotify.com",
+      "url": "https://jobs.spotify.com/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Music"
+    },
+    {
+      "title": "Python Developer",
+      "company": "Notion",
+      "email": "jobs@notion.so",
+      "url": "https://notion.so/careers",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Productivity"
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "company": "Figma",
+      "email": "jobs@figma.com",
+      "url": "https://figma.com/careers/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Design"
+    },
+    {
+      "title": "Python Engineer",
+      "company": "Stripe",
+      "email": "jobs@stripe.com",
+      "url": "https://stripe.com/jobs",
+      "applied": true,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Fintech"
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Plaid",
+      "email": "jobs@plaid.com",
+      "url": "https://plaid.com/careers/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Fintech"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Airbnb",
+      "email": "jobs@airbnb.com",
+      "url": "https://careers.airbnb.com/",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "category": "Travel"
     }
   ]
 }
