@@ -1,0 +1,11 @@
+SEARCH RESULTS:
+- GitHub Actions: Early February 2026 updates - GitHub Changelog: February 5, 2026 -A new Windows runner image with Visual Studio 2026 is now available in public preview. This dedicated image runs alongside the current windows-2025 image, providing a safe validation path ahead of the default Windows image migration.
+  https://github.blog/changelog/2026-02-05-github-actions-early-february-2026-updates/
+- 01/2026 - GitHub Changelog: January 1, 2026 -Reduced costs for GitHub-hosted runners are now in effect. We announced this update onDecember 16, 2025.
+  https://github.blog/changelog/month/01-2026/
+- Copilot commit message generation now in public preview on GitHub Desktop - GitHub Changelog: April 30, 2025 -Back to changelog · Release · April 17, 2025 • 1 minute read · IntroducingAI-powered commit message generation with Copilot—available in the latest GitHub Desktop Beta. With a click of a new button in the commit message box, get your ...
+  https://github.blog/changelog/2025-04-16-copilot-commit-message-generation-now-in-public-preview-on-github-desktop/
+- New releases for GitHub Actions - November 2025 - GitHub Changelog: November 6, 2025 -GitHub Actions:Early February 2026updates · actions · Docker and Docker Compose version upgrades on hosted runners · actions · GitHub Actions: Smarter editing, clearer debugging, and a new case function · actions · Discover tips, technical ...
+  https://github.blog/changelog/2025-11-06-new-releases-for-github-actions-november-2025/
+- Multi-domain support and filterable changes are now in public preview on GitHub Desktop - GitHub Changelog: April 30, 2025 -Download GitHub Desktop v3.4.19-beta1 today to try out the new features. REST API version 2026-03-10 is now available · ecosystem & accessibility · The Dependabot Proxy is now open source with an MIT license · ecosystem & accessibility supply chain security ... +1 · Selectively showing "act on your behalf" warning for GitHub Apps is in public preview · ecosystem & accessibility · GraphQL Explorer removal from API documentation on November 7, 2025 ·
+  https://github.blog/changelog/2025-03-31-multi-domain-support-and-filterable-changes-are-now-in-public-preview-on-github-desktop/

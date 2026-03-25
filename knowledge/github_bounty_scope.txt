@@ -1,0 +1,11 @@
+SEARCH RESULTS:
+- GitHub Security | GitHub Bug Bounty: You can find useful information in our rules,scope,targetsand FAQ sections. Happy hacking!
+  https://bounty.github.com/
+- Rules of Engagement | GitHub Bug Bounty: Check thelistof domains that are inscopefor the Bug Bounty program and thelistoftargetsfor useful information for getting started. Check thelistof bugs that have been classified as ineligible.
+  https://bounty.github.com/rules.html
+- github.net | GitHub Bug Bounty: Subdomain takeovers under *.github.net. Server Side Request Forgery vulnerabilities allowing access to our internal network. You may use ssrf-target.iad.github.net to test out SSRF attacks.
+  https://bounty.github.com/targets/github-net.html
+- Targets| GitHub Bug Bounty: Targets. In addition to ourscope, we want to share a high-level overview of GitHub's services
+  https://bounty.github.com/targets.html
+- Ineligible submissions | GitHub Bug Bounty: Vulnerabilities that require local system access are out ofscopeandineligible for bounty across all services. Network Denial of Service.Alistof out-of-scopesubdomains is available in ourscopesection. GitHub Pages.
+  https://bounty.github.com/ineligible.html
