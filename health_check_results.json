@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-03-26T10:33:57.183764",
+  "cloud_endpoints": {
+    "cloudflare": {
+      "status": "healthy",
+      "latency_ms": 782,
+      "status_code": 200
+    },
+    "railway": {
+      "status": "unhealthy",
+      "latency_ms": 997,
+      "status_code": 404,
+      "error": "HTTP 404"
+    },
+    "local": {
+      "status": "offline",
+      "error": "Connection refused"
+    }
+  },
+  "local_services": {
+    "ollama": true,
+    "api": false,
+    "dashboard": false
+  }
+}

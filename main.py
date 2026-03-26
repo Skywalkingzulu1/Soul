@@ -43,6 +43,7 @@ def print_banner(soul):
     print("    /signup <site>        - Sign up for a website")
     print("    /email <to> <message> - Send email via Gmail")
     print("    /sleep [seconds]      - Go to sleep and ingest data")
+    print("    /teach <knowledge>   - Learn new knowledge/patterns")
     print("  Codebase Tools:")
     print("    glob <pattern>        - Find files matching pattern")
     print("    grep <term>           - Search files for term")
@@ -277,6 +278,17 @@ async def main():
             )
             wake_msg = await soul.sleep(duration)
             print(f"\n{soul.identity.name}: {wake_msg}\n")
+            continue
+
+        if command_lower.startswith("/teach "):
+            knowledge = user_input[7:].strip()
+            if knowledge:
+                soul.memory.store("knowledge", knowledge, importance=0.9)
+                print(f"\n{soul.identity.name}: I've learned: {knowledge[:100]}...\n")
+            else:
+                print(
+                    f"\n{soul.identity.name}: What would you like me to learn? Usage: /teach <knowledge>\n"
+                )
             continue
 
         if command == "/sessions":

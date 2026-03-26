@@ -18,7 +18,7 @@ from datetime import datetime
 
 ENDPOINTS = {
     "cloudflare": {
-        "url": "https://andile-skywalkingzulu.skywalkingzulu.workers.dev/",
+        "url": "https://andile-soul-2026.skyzulu.workers.dev/",
     },
     "railway": {
         "url": "https://andile-skywalkingzulu.up.railway.app/",

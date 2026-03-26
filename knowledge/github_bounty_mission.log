@@ -1,0 +1,120 @@
+2026-03-23 15:31:28,456 - INFO - Starting 10-hour GitHub Bug Bounty Mission... \U0001f680
+2026-03-23 15:31:28,459 - INFO - Analyzing GitHub Bug Bounty Scope...
+2026-03-23 15:31:29,216 - INFO - response: https://grokipedia.com/api/typeahead?query=site%3Abounty.github.com+scope+and+targets+list&limit=1 200
+2026-03-23 15:31:29,592 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abounty.github.com%20scope%20and%20targets%20list 200
+2026-03-23 15:31:30,476 - INFO - response: https://www.google.com/search?q=site%3Abounty.github.com+scope+and+targets+list&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 403
+2026-03-23 15:31:31,135 - INFO - response: https://search.brave.com/search?q=site%3Abounty.github.com+scope+and+targets+list&source=web 200
+2026-03-23 15:31:31,178 - INFO - Scope analyzed and stored.
+2026-03-23 15:31:31,178 - INFO - Focusing research on: IDOR / Broken Access Control
+2026-03-23 15:31:31,954 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20Bug%20Bounty%20recent%20reports%20IDOR%20/%20Broken%20Access%20Control%202025%202026 200
+2026-03-23 15:31:32,297 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+Bug+Bounty+recent+reports+IDOR+%2F+Broken+Access+Control+2025+2026&limit=1 200
+2026-03-23 15:31:33,137 - INFO - response: https://search.brave.com/search?q=GitHub+Bug+Bounty+recent+reports+IDOR+%2F+Broken+Access+Control+2025+2026&source=web 200
+2026-03-23 15:31:35,212 - ERROR - Thinking failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-03-23 15:31:35,213 - INFO - Findings added for IDOR / Broken Access Control
+2026-03-23 15:33:41,209 - INFO - Starting 10-hour GitHub Bug Bounty Mission... \U0001f680
+2026-03-23 15:33:41,212 - INFO - Analyzing GitHub Bug Bounty Scope...
+2026-03-23 15:33:41,927 - INFO - response: https://grokipedia.com/api/typeahead?query=site%3Abounty.github.com+scope+and+targets+list&limit=1 200
+2026-03-23 15:33:42,200 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abounty.github.com%20scope%20and%20targets%20list 200
+2026-03-23 15:33:43,301 - INFO - response: https://yandex.com/search/site/?text=site%3Abounty.github.com+scope+and+targets+list&web=1&searchid=8649282 200
+2026-03-23 15:33:43,347 - INFO - Scope analyzed and stored.
+2026-03-23 15:33:43,348 - INFO - Focusing research on: IDOR / Broken Access Control
+2026-03-23 15:33:43,929 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+Bug+Bounty+recent+reports+IDOR+%2F+Broken+Access+Control+2025+2026&limit=1 200
+2026-03-23 15:33:43,978 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20Bug%20Bounty%20recent%20reports%20IDOR%20/%20Broken%20Access%20Control%202025%202026 200
+2026-03-23 15:33:45,917 - INFO - response: https://html.duckduckgo.com/html/ 200
+2026-03-23 15:33:47,977 - ERROR - Thinking failed: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-03-23 15:33:47,977 - INFO - Findings added for IDOR / Broken Access Control
+2026-03-23 15:34:32,304 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 15:34:33,145 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 15:34:33,305 - INFO - Starting 10-hour GitHub Bug Bounty Mission... \U0001f680
+2026-03-23 15:34:33,306 - INFO - Analyzing GitHub Bug Bounty Scope...
+2026-03-23 15:34:33,793 - INFO - response: https://grokipedia.com/api/typeahead?query=site%3Abounty.github.com+scope+and+targets+list&limit=1 200
+2026-03-23 15:34:34,023 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abounty.github.com%20scope%20and%20targets%20list 200
+2026-03-23 15:34:35,076 - INFO - response: https://yandex.com/search/site/?text=site%3Abounty.github.com+scope+and+targets+list&web=1&searchid=1167870 200
+2026-03-23 15:34:35,128 - INFO - Scope analyzed and stored.
+2026-03-23 15:34:35,128 - INFO - Focusing research on: IDOR / Broken Access Control
+2026-03-23 15:34:35,744 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20Bug%20Bounty%20recent%20reports%20IDOR%20/%20Broken%20Access%20Control%202025%202026 200
+2026-03-23 15:34:35,861 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+Bug+Bounty+recent+reports+IDOR+%2F+Broken+Access+Control+2025+2026&limit=1 200
+2026-03-23 15:34:36,473 - INFO - response: https://www.mojeek.com/search?q=GitHub+Bug+Bounty+recent+reports+IDOR+%2F+Broken+Access+Control+2025+2026 403
+2026-03-23 15:34:37,232 - INFO - response: https://search.yahoo.com/search;_ylt=jW-IYRWoLDPNIPKgNmJQEhUw;_ylu=nsqVnYj-cdwiMnS8sfMwQmf0QKiGfZkiG3EdGvEGyOXG9zc?p=GitHub+Bug+Bounty+recent+reports+IDOR+%2F+Broken+Access+Control+2025+2026 200
+2026-03-23 15:36:05,314 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 15:36:06,215 - INFO - Findings added for IDOR / Broken Access Control
+2026-03-23 15:40:42,253 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 15:40:43,229 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 15:40:43,286 - INFO - Starting 10-hour HUMAN-CENTRIC GitHub Bug Bounty Mission... \U0001f680
+2026-03-23 15:40:43,288 - INFO - Reconnaissance: Searching for undocumented features and recent changelogs...
+2026-03-23 15:40:44,219 - INFO - response: https://grokipedia.com/api/typeahead?query=site%3Agithub.blog+%27changelog%27+OR+%27introducing%27+OR+%27beta%27+2025+2026&limit=1 200
+2026-03-23 15:40:44,470 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Agithub.blog%20%27changelog%27%20OR%20%27introducing%27%20OR%20%27beta%27%202025%202026 200
+2026-03-23 15:40:45,159 - INFO - response: https://www.google.com/search?q=site%3Agithub.blog+%27changelog%27+OR+%27introducing%27+OR+%27beta%27+2025+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 403
+2026-03-23 15:40:45,914 - INFO - response: https://search.brave.com/search?q=site%3Agithub.blog+%27changelog%27+OR+%27introducing%27+OR+%27beta%27+2025+2026&source=web 200
+2026-03-23 15:40:45,965 - INFO - Fresh surfaces documented.
+2026-03-23 15:40:45,965 - INFO - Human-Thinking Phase: Race Conditions in GitHub Actions Runners
+2026-03-23 15:40:46,527 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Race+Conditions+in+GitHub+Actions+Runners+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 15:40:46,745 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Race%20Conditions%20in%20GitHub%20Actions%20Runners%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 15:40:47,959 - INFO - response: https://yandex.com/search/site/?text=GitHub+vulnerability+research+Race+Conditions+in+GitHub+Actions+Runners+novel+techniques+-hackerone+-bugcrowd&web=1&searchid=2491303 200
+2026-03-23 15:42:17,388 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 15:42:18,035 - INFO - Human log entry completed for Race Conditions in GitHub Actions Runners
+2026-03-23 16:02:18,219 - INFO - Human-Thinking Phase: Cache Poisoning in Dependabot/Actions-Cache
+2026-03-23 16:02:18,924 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Cache+Poisoning+in+Dependabot%2FActions-Cache+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 16:02:19,156 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Cache%20Poisoning%20in%20Dependabot/Actions-Cache%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 16:02:19,828 - INFO - response: https://www.mojeek.com/search?q=GitHub+vulnerability+research+Cache+Poisoning+in+Dependabot%2FActions-Cache+novel+techniques+-hackerone+-bugcrowd 403
+2026-03-23 16:02:22,372 - INFO - response: https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_719faa20-e39f-4113-ab52-63b763cb0599 200
+2026-03-23 16:02:23,707 - INFO - response: https://yandex.com/search/site/?text=GitHub+vulnerability+research+Cache+Poisoning+in+Dependabot%2FActions-Cache+novel+techniques+-hackerone+-bugcrowd&web=1&searchid=1017647 200
+2026-03-23 16:03:44,433 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 16:03:44,675 - INFO - Human log entry completed for Cache Poisoning in Dependabot/Actions-Cache
+2026-03-23 16:23:44,778 - INFO - Human-Thinking Phase: Logic Flaws in Copilot PR Suggestions
+2026-03-23 16:23:45,595 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Logic+Flaws+in+Copilot+PR+Suggestions+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 16:23:45,756 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Logic%20Flaws%20in%20Copilot%20PR%20Suggestions%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 16:23:47,364 - INFO - response: https://www.mojeek.com/search?q=GitHub+vulnerability+research+Logic+Flaws+in+Copilot+PR+Suggestions+novel+techniques+-hackerone+-bugcrowd 200
+2026-03-23 16:25:16,991 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 16:25:17,246 - INFO - Human log entry completed for Logic Flaws in Copilot PR Suggestions
+2026-03-23 16:45:20,444 - INFO - Human-Thinking Phase: Bypassing Branch Protection via API Edge Cases
+2026-03-23 16:45:21,255 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Bypassing+Branch+Protection+via+API+Edge+Cases+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 16:45:21,382 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Bypassing%20Branch%20Protection%20via%20API%20Edge%20Cases%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 16:45:23,439 - INFO - response: https://html.duckduckgo.com/html/ 200
+2026-03-23 16:46:37,074 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 16:46:37,351 - INFO - Human log entry completed for Bypassing Branch Protection via API Edge Cases
+2026-03-23 17:06:37,490 - INFO - Mission Ingestion: Humanizing and consolidating findings...
+2026-03-23 17:06:37,535 - INFO - Andile Sizophila Mchunu is going to sleep for 30 seconds... \U0001f476\U0001f4a4
+2026-03-23 17:06:37,540 - INFO - Dreaming: Consolidating memories into meta-reflections...
+2026-03-23 17:06:39,131 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 17:07:08,990 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 17:07:09,019 - ERROR - Meta-reflection failed: 'message'
+2026-03-23 17:07:09,020 - INFO - Ingesting Data: Organizing recent episodic memories...
+2026-03-23 17:07:14,110 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 17:07:14,113 - INFO - Cooling down brain modules...
+2026-03-23 17:07:14,116 - INFO - Zzz... sleeping for 30s...
+2026-03-23 17:07:44,160 - INFO - Andile Sizophila Mchunu woke up feeling refreshed! Data ingested and brain cooled.
+2026-03-23 17:07:44,175 - INFO - Human-Thinking Phase: Race Conditions in GitHub Actions Runners
+2026-03-23 17:07:44,959 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Race+Conditions+in+GitHub+Actions+Runners+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 17:07:45,150 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Race%20Conditions%20in%20GitHub%20Actions%20Runners%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 17:07:45,924 - INFO - response: https://www.google.com/search?q=GitHub+vulnerability+research+Race+Conditions+in+GitHub+Actions+Runners+novel+techniques+-hackerone+-bugcrowd&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 403
+2026-03-23 17:07:47,695 - INFO - response: https://html.duckduckgo.com/html/ 200
+2026-03-23 17:08:50,798 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 17:08:51,065 - INFO - Human log entry completed for Race Conditions in GitHub Actions Runners
+2026-03-23 17:28:51,216 - INFO - Human-Thinking Phase: Cache Poisoning in Dependabot/Actions-Cache
+2026-03-23 17:28:52,061 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Cache%20Poisoning%20in%20Dependabot/Actions-Cache%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 17:28:52,070 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Cache+Poisoning+in+Dependabot%2FActions-Cache+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 17:28:53,369 - INFO - response: https://yandex.com/search/site/?text=GitHub+vulnerability+research+Cache+Poisoning+in+Dependabot%2FActions-Cache+novel+techniques+-hackerone+-bugcrowd&web=1&searchid=1074130 200
+2026-03-23 17:30:08,737 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 17:30:09,150 - INFO - Human log entry completed for Cache Poisoning in Dependabot/Actions-Cache
+2026-03-23 17:50:09,259 - INFO - Human-Thinking Phase: Logic Flaws in Copilot PR Suggestions
+2026-03-23 17:50:09,907 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Logic+Flaws+in+Copilot+PR+Suggestions+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 17:50:10,103 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Logic%20Flaws%20in%20Copilot%20PR%20Suggestions%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 17:50:10,989 - INFO - response: https://www.google.com/search?q=GitHub+vulnerability+research+Logic+Flaws+in+Copilot+PR+Suggestions+novel+techniques+-hackerone+-bugcrowd&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 403
+2026-03-23 17:50:12,828 - INFO - response: https://html.duckduckgo.com/html/ 200
+2026-03-23 17:51:36,598 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 17:51:37,217 - INFO - Human log entry completed for Logic Flaws in Copilot PR Suggestions
+2026-03-23 18:07:59,415 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 18:08:00,476 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2026-03-23 18:08:00,569 - INFO - Starting 10-hour HUMAN-CENTRIC GitHub Bug Bounty Mission... \U0001f680
+2026-03-23 18:08:00,570 - INFO - Reconnaissance: Searching for undocumented features and recent changelogs...
+2026-03-23 18:08:02,248 - INFO - response: https://grokipedia.com/api/typeahead?query=site%3Agithub.blog+%27changelog%27+OR+%27introducing%27+OR+%27beta%27+2025+2026&limit=1 200
+2026-03-23 18:08:02,349 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Agithub.blog%20%27changelog%27%20OR%20%27introducing%27%20OR%20%27beta%27%202025%202026 200
+2026-03-23 18:08:03,355 - INFO - response: https://search.brave.com/search?q=site%3Agithub.blog+%27changelog%27+OR+%27introducing%27+OR+%27beta%27+2025+2026&source=web 200
+2026-03-23 18:08:03,433 - INFO - Fresh surfaces documented.
+2026-03-23 18:08:03,434 - INFO - Human-Thinking Phase: Race Conditions in GitHub Actions Runners
+2026-03-23 18:08:04,074 - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=GitHub%20vulnerability%20research%20Race%20Conditions%20in%20GitHub%20Actions%20Runners%20novel%20techniques%20-hackerone%20-bugcrowd 200
+2026-03-23 18:08:05,073 - INFO - response: https://grokipedia.com/api/typeahead?query=GitHub+vulnerability+research+Race+Conditions+in+GitHub+Actions+Runners+novel+techniques+-hackerone+-bugcrowd&limit=1 200
+2026-03-23 18:08:06,299 - INFO - response: https://yandex.com/search/site/?text=GitHub+vulnerability+research+Race+Conditions+in+GitHub+Actions+Runners+novel+techniques+-hackerone+-bugcrowd&web=1&searchid=3462444 200
+2026-03-23 18:09:16,204 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-03-23 18:09:16,384 - INFO - Human log entry completed for Race Conditions in GitHub Actions Runners

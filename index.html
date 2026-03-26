@@ -31,36 +31,31 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        
         body {
             font-family: 'Space Grotesk', system-ui, sans-serif;
             background: var(--bg-dark);
             color: var(--text);
             min-height: 100vh;
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         body::before {
             content: '';
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: 
-                radial-gradient(ellipse 80% 50% at 20% 20%, #ff6b2c08 0%, transparent 50%),
-                radial-gradient(ellipse 60% 40% at 80% 80%, #00d4ff06 0%, transparent 50%);
+            background: radial-gradient(ellipse 80% 50% at 20% 20%, #ff6b2c08 0%, transparent 50%),
+                        radial-gradient(ellipse 60% 40% at 80% 80%, #00d4ff06 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
 
         .container { max-width: 1800px; margin: 0 auto; padding: 20px; }
 
-        /* Header */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             padding-bottom: 20px;
             border-bottom: 1px solid var(--border);
             flex-wrap: wrap;
@@ -116,11 +111,10 @@
         }
 
         @keyframes breathe {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(0.9); }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
         }
 
-        /* Grid Layout */
         .dashboard-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -161,11 +155,10 @@
             display: flex; align-items: center; justify-content: center;
             font-size: 2rem;
             margin: 0 auto 15px;
-            box-shadow: 0 0 30px #ff6b2c30;
         }
 
         .identity-name { text-align: center; font-size: 1.3rem; margin-bottom: 5px; }
-        .identity-handle { text-align: center; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; }
+        .identity-handle { text-align: center; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; }
         .identity-badge {
             display: inline-flex; gap: 6px; padding: 4px 12px;
             background: var(--accent-orange-dim);
@@ -185,7 +178,6 @@
         .detail-label { color: var(--text-dim); }
         .detail-value { color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; }
 
-        .beliefs { margin-top: 15px; }
         .belief-tag {
             display: inline-block; padding: 4px 10px;
             background: var(--bg-elevated);
@@ -220,8 +212,7 @@
         .github .goal-status { background: var(--accent-purple-dim); color: var(--accent-purple); }
         .crypto .goal-status { background: var(--accent-green-dim); color: var(--accent-green); }
 
-        .goal-stats { display: grid; gap: 10px; }
-        .goal-stat { display: flex; justify-content: space-between; }
+        .goal-stat { display: flex; justify-content: space-between; margin-bottom: 8px; }
         .stat-label { font-size: 0.8rem; color: var(--text-dim); }
         .stat-value { font-family: 'JetBrains Mono', monospace; font-weight: 600; }
         .paid .stat-value { color: var(--accent-orange); }
@@ -276,68 +267,6 @@
 
         .flow-arrow { font-size: 1.2rem; color: var(--text-muted); }
 
-        /* Accounts */
-        .accounts-card { grid-column: span 6; }
-        @media (max-width: 900px) { .accounts-card { grid-column: span 12; } }
-
-        .account-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        @media (max-width: 600px) { .account-grid { grid-template-columns: repeat(2, 1fr); } }
-
-        .account-item {
-            display: flex; align-items: center; gap: 10px;
-            padding: 12px;
-            background: var(--bg-elevated);
-            border-radius: 10px;
-            border: 1px solid var(--border);
-            transition: all 0.2s;
-        }
-
-        .account-item:hover { border-color: var(--accent-green); transform: translateX(3px); }
-        .account-item.inactive { opacity: 0.5; }
-
-        .account-icon { font-size: 1.2rem; }
-        .account-info h4 { font-size: 0.85rem; }
-        .account-info span { font-size: 0.7rem; color: var(--text-dim); }
-
-        /* Activity */
-        .activity-card { grid-column: span 6; }
-        @media (max-width: 900px) { .activity-card { grid-column: span 12; } }
-
-        .activity-feed {
-            max-height: 300px;
-            overflow-y: auto;
-            scrollbar-width: thin;
-        }
-
-        .activity-item {
-            display: flex; gap: 12px;
-            padding: 12px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .activity-avatar {
-            width: 32px; height: 32px;
-            border-radius: 8px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-        .activity-avatar.andile { background: var(--accent-orange-dim); }
-        .activity-avatar.github { background: var(--accent-purple-dim); }
-        .activity-avatar.system { background: var(--bg-elevated); }
-
-        .activity-content { flex: 1; }
-        .activity-header { display: flex; justify-content: space-between; font-size: 0.8rem; }
-        .activity-actor { font-weight: 600; }
-        .andile .activity-actor { color: var(--accent-orange); }
-        .github .activity-actor { color: var(--accent-purple); }
-        .activity-time { color: var(--text-dim); font-size: 0.75rem; }
-        .activity-action { font-size: 0.85rem; color: var(--text); }
-
         /* System Status */
         .system-card { grid-column: span 6; }
         @media (max-width: 900px) { .system-card { grid-column: span 12; } }
@@ -362,19 +291,68 @@
         .system-value.offline { color: var(--accent-red); }
         .system-value.pending { color: var(--accent-orange); }
 
+        /* Activity */
+        .activity-card { grid-column: span 6; }
+        @media (max-width: 900px) { .activity-card { grid-column: span 12; } }
+
+        .activity-feed { max-height: 250px; overflow-y: auto; scrollbar-width: thin; }
+
+        .activity-item {
+            display: flex; gap: 12px;
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .activity-avatar {
+            width: 32px; height: 32px;
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .activity-avatar.andile { background: var(--accent-orange-dim); }
+        .activity-avatar.github { background: var(--accent-purple-dim); }
+        .activity-avatar.system { background: var(--bg-elevated); }
+
+        .activity-content { flex: 1; }
+        .activity-header { display: flex; justify-content: space-between; font-size: 0.8rem; }
+        .activity-actor { font-weight: 600; }
+        .andile .activity-actor { color: var(--accent-orange); }
+        .github .activity-actor { color: var(--accent-purple); }
+        .activity-time { color: var(--text-dim); font-size: 0.75rem; }
+        .activity-action { font-size: 0.85rem; }
+
+        /* Jobs */
+        .jobs-card { grid-column: span 6; }
+
+        .jobs-list { max-height: 200px; overflow-y: auto; }
+
+        .job-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+
+        .job-info h4 { font-size: 0.85rem; }
+        .job-info span { font-size: 0.75rem; color: var(--text-dim); }
+        .job-status { font-size: 0.7rem; padding: 3px 8px; border-radius: 10px; }
+        .job-status.sent { background: var(--accent-green-dim); color: var(--accent-green); }
+        .job-status.pending { background: var(--accent-orange-dim); color: var(--accent-orange); }
+
         /* Chat */
         .chat-card { grid-column: span 12; }
-        @media (max-width: 900px) { .chat-card { grid-column: span 12; } }
 
         .chat-container {
             display: grid;
-            grid-template-columns: 1fr 300px;
+            grid-template-columns: 1fr 250px;
             gap: 20px;
         }
         @media (max-width: 900px) { .chat-container { grid-template-columns: 1fr; } }
 
         .chat-messages {
-            height: 300px;
+            height: 250px;
             overflow-y: auto;
             background: var(--bg-elevated);
             border-radius: 10px;
@@ -383,8 +361,8 @@
         }
 
         .chat-message {
-            margin-bottom: 15px;
-            padding: 12px;
+            margin-bottom: 12px;
+            padding: 10px;
             border-radius: 10px;
             max-width: 80%;
         }
@@ -429,13 +407,15 @@
         .btn-primary { background: linear-gradient(135deg, #ff6b2c, #ff8f5c); border: none; color: #000; }
         .btn-small { padding: 8px 12px; font-size: 0.8rem; }
 
-        /* Screenshot Gallery */
+        /* Screenshots */
         .screenshot-card { grid-column: span 6; }
 
         .screenshot-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
+            max-height: 200px;
+            overflow-y: auto;
         }
 
         .screenshot-item {
@@ -454,7 +434,7 @@
         .console-card { grid-column: span 6; }
 
         .console-container {
-            height: 200px;
+            height: 180px;
             overflow-y: auto;
             background: #000;
             border-radius: 10px;
@@ -468,35 +448,6 @@
         .console-actor { font-weight: 600; min-width: 70px; }
         .console-actor.andile { color: var(--accent-orange); }
         .console-actor.system { color: var(--text-dim); }
-
-        /* Jobs List */
-        .jobs-card { grid-column: span 6; }
-
-        .jobs-list {
-            max-height: 250px;
-            overflow-y: auto;
-        }
-
-        .job-item {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 10px;
-            background: var(--bg-elevated);
-            border-radius: 8px;
-            margin-bottom: 8px;
-        }
-
-        .job-info h4 { font-size: 0.85rem; }
-        .job-info span { font-size: 0.75rem; color: var(--text-dim); }
-        .job-status { font-size: 0.7rem; padding: 3px 8px; border-radius: 10px; }
-        .job-status.sent { background: var(--accent-green-dim); color: var(--accent-green); }
-        .job-status.pending { background: var(--accent-orange-dim); color: var(--accent-orange); }
-
-        /* Charts */
-        .chart-card { grid-column: span 4; }
-        @media (max-width: 1200px) { .chart-card { grid-column: span 6; } }
-        @media (max-width: 768px) { .chart-card { grid-column: span 12; } }
-
-        .chart-container { height: 200px; }
 
         /* Action Bar */
         .action-bar {
@@ -524,10 +475,12 @@
 
         .toast.show { transform: translateY(0); opacity: 1; }
 
+        .toast.error { border-color: var(--accent-red); color: var(--accent-red); }
+
         /* Loading */
         .loading {
             display: inline-block;
-            width: 20px; height: 20px;
+            width: 16px; height: 16px;
             border: 2px solid var(--border);
             border-top-color: var(--accent-orange);
             border-radius: 50%;
@@ -542,12 +495,159 @@
             font-size: 0.75rem; color: var(--text-dim);
         }
 
-        .refresh-indicator.spinning .loading { display: inline-block; }
-
         /* Scrollbar */
         ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
         ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        /* Task Queue Styles */
+        .queue-card { grid-column: span 6; }
+        @media (max-width: 900px) { .queue-card { grid-column: span 12; } }
+
+        .queue-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .queue-stat {
+            text-align: center;
+            padding: 12px;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+        }
+
+        .queue-stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .queue-stat-label {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        .queue-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .queue-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            font-size: 0.8rem;
+        }
+
+        .queue-item-type {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+        }
+
+        .queue-item-priority {
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+        }
+
+        .priority-1 { background: var(--accent-red); color: white; }
+        .priority-2 { background: var(--accent-orange); color: black; }
+        .priority-3 { background: var(--accent-cyan-dim); color: var(--accent-cyan); }
+        .priority-4 { background: var(--accent-purple-dim); color: var(--accent-purple); }
+        .priority-5 { background: var(--bg-card); color: var(--text-dim); }
+
+        /* Email Stats Styles */
+        .email-card { grid-column: span 6; }
+        @media (max-width: 900px) { .email-card { grid-column: span 12; } }
+
+        .email-meter {
+            height: 20px;
+            background: var(--bg-elevated);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .email-meter-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+
+        .email-meter-fill.warning { background: linear-gradient(90deg, var(--accent-orange), var(--accent-red)); }
+
+        .email-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .email-detail {
+            padding: 10px;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+        }
+
+        .email-detail-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .email-detail-label {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+        }
+
+        /* Schedule Card */
+        .schedule-card { grid-column: span 12; }
+
+        .schedule-bar {
+            display: flex;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .schedule-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .schedule-github { background: var(--accent-purple); flex: 40; }
+        .schedule-crypto { background: var(--accent-green); flex: 30; }
+        .schedule-jobs { background: var(--accent-orange); flex: 20; }
+        .schedule-research { background: var(--accent-cyan); flex: 5; }
+        .schedule-system { background: var(--text-dim); flex: 5; }
+
+        /* Contributions Card */
+        .contributions-card { grid-column: span 12; }
+
+        .quick-actions .btn {
+            justify-content: flex-start;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -587,7 +687,7 @@
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Email</span>
-                    <span class="detail-value" id="email">andilesizophila@gmail.com</span>
+                    <span class="detail-value">andilesizophila@gmail.com</span>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Model</span>
@@ -598,12 +698,12 @@
                     <span class="detail-value">2024</span>
                 </div>
 
-                <div class="beliefs">
+                <div style="margin-top: 15px;">
                     <div class="card-title">Core Beliefs</div>
-                    <span class="belief-tag">🤝 Ubuntu: I am because we are</span>
-                    <span class="belief-tag">💎 Human dignity is absolute</span>
-                    <span class="belief-tag">🗳️ Democracy is the least bad system</span>
-                    <span class="belief-tag">📡 Truth is non-negotiable</span>
+                    <span class="belief-tag">🤝 Ubuntu</span>
+                    <span class="belief-tag">💎 Human dignity</span>
+                    <span class="belief-tag">🗳️ Democracy</span>
+                    <span class="belief-tag">📡 Truth</span>
                 </div>
             </div>
 
@@ -617,15 +717,15 @@
                 <div class="goal-stats">
                     <div class="goal-stat">
                         <span class="stat-label">Jobs Applied</span>
-                        <span class="stat-value" id="jobsApplied">0</span>
+                        <span class="stat-value" id="jobsApplied">-</span>
                     </div>
                     <div class="goal-stat">
                         <span class="stat-label">Emails Sent</span>
-                        <span class="stat-value" id="emailsSent">0</span>
+                        <span class="stat-value" id="emailsSent">-</span>
                     </div>
                     <div class="goal-stat">
                         <span class="stat-label">Responses</span>
-                        <span class="stat-value" id="responses">0</span>
+                        <span class="stat-value" id="responses">-</span>
                     </div>
                     <div class="goal-stat">
                         <span class="stat-label">Income</span>
@@ -634,9 +734,6 @@
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="incomeProgress" style="width: 0%"></div>
-                </div>
-                <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 8px;">
-                    <span id="jobProgressPct">0%</span> response rate
                 </div>
             </div>
 
@@ -649,26 +746,23 @@
                 <div class="goal-stats">
                     <div class="goal-stat">
                         <span class="stat-label">PRs Made</span>
-                        <span class="stat-value" id="prsMade">0</span>
+                        <span class="stat-value" id="prsMade">-</span>
                     </div>
                     <div class="goal-stat">
                         <span class="stat-label">PRs Merged</span>
-                        <span class="stat-value" id="prsMerged">0</span>
+                        <span class="stat-value" id="prsMerged">-</span>
                     </div>
                     <div class="goal-stat">
                         <span class="stat-label">Followers</span>
-                        <span class="stat-value" id="followers">0</span>
+                        <span class="stat-value" id="followers">-</span>
                     </div>
                     <div class="goal-stat">
                         <span class="stat-label">Repos</span>
-                        <span class="stat-value" id="repos">0</span>
+                        <span class="stat-value" id="repos">-</span>
                     </div>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="prProgress" style="width: 0%"></div>
-                </div>
-                <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 8px;">
-                    <span id="commits">0</span> commits this month
                 </div>
             </div>
 
@@ -680,28 +774,24 @@
                 <h3 style="margin-bottom: 15px;">Crypto Growth</h3>
                 <div class="goal-stats">
                     <div class="goal-stat">
-                        <span class="stat-label">Airdrops</span>
-                        <span class="stat-value" id="airdropsTracked">8</span>
+                        <span class="stat-label">Strategies</span>
+                        <span class="stat-value" id="cryptoStrategies">0</span>
                     </div>
                     <div class="goal-stat">
-                        <span class="stat-label">Claimed</span>
+                        <span class="stat-label">Airdrops</span>
                         <span class="stat-value" id="airdropsClaimed">0</span>
                     </div>
                     <div class="goal-stat">
-                        <span class="stat-label">ETH Balance</span>
-                        <span class="stat-value" id="ethBalance">0.00</span>
+                        <span class="stat-label">Earned</span>
+                        <span class="stat-value" id="cryptoEarned">$0</span>
                     </div>
                     <div class="goal-stat">
-                        <span class="stat-label">Potential</span>
-                        <span class="stat-value" id="potentialValue">$0-$50K</span>
+                        <span class="stat-label">Total</span>
+                        <span class="stat-value" id="totalEarned">$0</span>
                     </div>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="cryptoProgress" style="width: 0%"></div>
-                </div>
-                <div class="detail-row" style="margin-top: 15px; border: none;">
-                    <span class="detail-label">Wallet</span>
-                    <span class="detail-value" style="font-size: 0.65rem;" id="walletShort">0x670E...2305</span>
                 </div>
             </div>
 
@@ -752,13 +842,8 @@
                     </div>
                     <div class="system-item">
                         <div class="system-icon">⚡</div>
-                        <div class="system-name">Cloudflare</div>
-                        <div class="system-value pending" id="cloudflareStatus">Pending</div>
-                    </div>
-                    <div class="system-item">
-                        <div class="system-icon">🚂</div>
-                        <div class="system-name">Railway</div>
-                        <div class="system-value pending" id="railwayStatus">Project</div>
+                        <div class="system-name">Ollama</div>
+                        <div class="system-value online" id="ollamaStatus">Online</div>
                     </div>
                     <div class="system-item">
                         <div class="system-icon">☁️</div>
@@ -766,40 +851,126 @@
                         <div class="system-value online" id="impossibleStatus">Connected</div>
                     </div>
                     <div class="system-item">
-                        <div class="system-icon">🧠</div>
-                        <div class="system-name">Ollama</div>
-                        <div class="system-value online" id="ollamaStatus">Online</div>
-                    </div>
-                    <div class="system-item">
                         <div class="system-icon">🔄</div>
                         <div class="system-name">Cycles</div>
                         <div class="system-value" id="cycles">0</div>
                     </div>
+                    <div class="system-item">
+                        <div class="system-icon">💾</div>
+                        <div class="system-name">Memory</div>
+                        <div class="system-value" id="memoryCount">0</div>
+                    </div>
+                    <div class="system-item">
+                        <div class="system-icon">📝</div>
+                        <div class="system-name">Commits</div>
+                        <div class="system-value" id="commits">0</div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Jobs List -->
+            <!-- Task Queue -->
+            <div class="card queue-card">
+                <div class="card-title">📋 Task Queue</div>
+                <div class="queue-stats">
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="queuePending" style="color: var(--accent-orange);">0</div>
+                        <div class="queue-stat-label">Pending</div>
+                    </div>
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="queueInProgress" style="color: var(--accent-cyan);">0</div>
+                        <div class="queue-stat-label">In Progress</div>
+                    </div>
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="queueCompleted" style="color: var(--accent-green);">0</div>
+                        <div class="queue-stat-label">Completed</div>
+                    </div>
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="queueFailed" style="color: var(--accent-red);">0</div>
+                        <div class="queue-stat-label">Failed</div>
+                    </div>
+                </div>
+                <div class="queue-list" id="queueList">
+                    Loading...
+                </div>
+            </div>
+
+            <!-- Email Stats -->
+            <div class="card email-card">
+                <div class="card-title">📧 Gmail Rate Limit</div>
+                <div class="email-meter">
+                    <div class="email-meter-fill" id="emailMeter" style="width: 0%"></div>
+                </div>
+                <div class="email-details">
+                    <div class="email-detail">
+                        <div class="email-detail-value" id="emailSent">0</div>
+                        <div class="email-detail-label">Sent Today</div>
+                    </div>
+                    <div class="email-detail">
+                        <div class="email-detail-value" id="emailRemaining">500</div>
+                        <div class="email-detail-label">Remaining</div>
+                    </div>
+                    <div class="email-detail">
+                        <div class="email-detail-value" id="emailHourly">0</div>
+                        <div class="email-detail-label">This Hour</div>
+                    </div>
+                    <div class="email-detail">
+                        <div class="email-detail-value" id="emailTotal">0</div>
+                        <div class="email-detail-label">All Time</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule -->
+            <div class="card schedule-card">
+                <div class="card-title">⚙️ 1-2 Hour Execution Cycle</div>
+                <div class="schedule-bar">
+                    <div class="schedule-segment schedule-github">GitHub 40%</div>
+                    <div class="schedule-segment schedule-crypto">Crypto 30%</div>
+                    <div class="schedule-segment schedule-jobs">Jobs 20%</div>
+                    <div class="schedule-segment schedule-research">Research 5%</div>
+                    <div class="schedule-segment schedule-system">System 5%</div>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--text-dim);">
+                    <strong>Cycle:</strong> 1.5 hours | <strong>Tasks:</strong> 20 per cycle | <strong>~13 cycles/day</strong><br>
+                    <strong>Per Cycle:</strong> 8 GitHub + 6 Crypto + 4 Jobs + 1 Research + 1 System
+                </div>
+            </div>
+
+            <!-- Contributions -->
+            <div class="card" style="grid-column: span 12;">
+                <div class="card-title">🐙 GitHub Contributions</div>
+                <div class="queue-stats">
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="prOpen" style="color: var(--accent-cyan);">0</div>
+                        <div class="queue-stat-label">PRs Open</div>
+                    </div>
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="prMerged" style="color: var(--accent-green);">0</div>
+                        <div class="queue-stat-label">PRs Merged</div>
+                    </div>
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="prClosed" style="color: var(--accent-orange);">0</div>
+                        <div class="queue-stat-label">PRs Closed</div>
+                    </div>
+                    <div class="queue-stat">
+                        <div class="queue-stat-value" id="targetRepos" style="color: var(--accent-purple);">0</div>
+                        <div class="queue-stat-label">Target Repos</div>
+                    </div>
+                </div>
+                <div class="queue-list" id="prList">
+                    Loading...
+                </div>
+                <div style="margin-top: 10px; font-size: 0.8rem; color: var(--text-dim);">
+                    <strong>BSC Focus:</strong> PancakeSwap, Venus, Alpaca Finance (+7 more) | 
+                    <strong>Bounties Claimed:</strong> <span id="bountiesClaimed">0</span>
+                </div>
+            </div>
+
+            <!-- Jobs -->
             <div class="card jobs-card">
                 <div class="card-title">📋 Recent Applications</div>
                 <div class="jobs-list" id="jobsList">
                     Loading...
-                </div>
-            </div>
-
-            <!-- Accounts -->
-            <div class="card accounts-card">
-                <div class="card-title">🏦 Account Manager</div>
-                <div class="account-grid" id="accountGrid">
-                    Loading...
-                </div>
-                <div style="margin-top: 15px;">
-                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 8px;">
-                        <span>Progress</span>
-                        <span id="accountProgress">0/14</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="accountBar" style="width: 0%"></div>
-                    </div>
                 </div>
             </div>
 
@@ -827,14 +998,12 @@
                             <button class="btn btn-primary" onclick="sendMessage()">Send</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="quick-actions">
                         <div class="card-title">Quick Actions</div>
-                        <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <button class="btn btn-small" onclick="takeScreenshot()">📸 Screenshot</button>
-                            <button class="btn btn-small" onclick="runTask('jobs')">💰 Apply for Jobs</button>
-                            <button class="btn btn-small" onclick="runTask('github')">🐙 Check PRs</button>
-                            <button class="btn btn-small" onclick="runTask('crypto')">🪙 Check Airdrops</button>
-                        </div>
+                        <button class="btn btn-small" onclick="takeScreenshot()">📸 Screenshot</button>
+                        <button class="btn btn-small" onclick="runTask('apply')">💰 Apply Jobs</button>
+                        <button class="btn btn-small" onclick="runTask('refresh')">🔄 Refresh Git</button>
+                        <button class="btn btn-small" onclick="runTask('commits')">📝 Check Commits</button>
                     </div>
                 </div>
             </div>
@@ -851,11 +1020,11 @@
                 </div>
             </div>
 
-            <!-- Screenshot -->
+            <!-- Screenshots -->
             <div class="card screenshot-card">
                 <div class="card-title">🖼️ Screenshots</div>
                 <div class="screenshot-grid" id="screenshotGrid">
-                    <div style="grid-column: span 3; text-align: center; padding: 40px; color: var(--text-dim);">
+                    <div style="grid-column: span 3; text-align: center; padding: 30px; color: var(--text-dim);">
                         Click "📸 Screenshot" to capture
                     </div>
                 </div>
@@ -865,8 +1034,9 @@
             <div class="action-bar">
                 <button class="btn" onclick="refreshAllData()">🔄 Refresh Data</button>
                 <button class="btn" onclick="takeScreenshot()">📸 Screenshot</button>
+                <button class="btn" onclick="runTask('apply')">💰 Apply Jobs</button>
+                <button class="btn" onclick="runTask('refresh')">🔄 Refresh Git</button>
                 <button class="btn" onclick="viewGitHub()">🐙 View GitHub</button>
-                <button class="btn" onclick="viewDashboard()">📊 Dashboard</button>
             </div>
         </div>
     </div>
@@ -875,9 +1045,7 @@
 
     <script>
         // Configuration
-        const GITHUB_OWNER = 'Skywalkingzulu1';
-        const GITHUB_REPO = 'Soul';
-        const API_TOKEN = ''; // Set via env or leave empty for public data
+        const API_BASE = 'http://localhost:8090';
         
         // State
         let cycles = 0;
@@ -888,7 +1056,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             refreshAllData();
             setInterval(updateUptime, 1000);
-            setInterval(refreshAllData, 30000);
+            setInterval(refreshAllData, 60000); // 60 seconds
         });
 
         function updateUptime() {
@@ -900,24 +1068,15 @@
         }
 
         // API Functions
-        async function fetchGitHub(endpoint) {
+        async function fetchAPI(endpoint) {
             try {
-                const response = await fetch(`https://api.github.com${endpoint}`, {
-                    headers: { 'Authorization': `token ${API_TOKEN}` }
+                const response = await fetch(`${API_BASE}${endpoint}`, {
+                    headers: { 'Authorization': `Bearer andile_dev_secret_2026` }
                 });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 return await response.json();
             } catch (e) {
-                console.error('GitHub API error:', e);
-                return null;
-            }
-        }
-
-        async function fetchJSON(url) {
-            try {
-                const response = await fetch(url);
-                return await response.json();
-            } catch (e) {
-                console.error('JSON fetch error:', e);
+                console.error(`API error: ${endpoint}`, e);
                 return null;
             }
         }
@@ -929,50 +1088,54 @@
             document.querySelector('#refreshIndicator .loading').style.display = 'inline-block';
 
             try {
-                // Fetch GitHub user
-                const user = await fetchGitHub(`/users/${GITHUB_OWNER}`);
-                if (user) {
-                    animateNumber('followers', user.followers || 0);
-                    animateNumber('repos', user.public_repos || 0);
+                // Fetch status
+                const status = await fetchAPI('/api/status');
+                if (status) {
+                    const andile = status.participants?.andile;
+                    if (andile) {
+                        document.getElementById('systemStatus').textContent = andile.status || 'Training';
+                        
+                        // Current task
+                        if (status.tasks?.length > 0) {
+                            const pending = status.tasks.find(t => t.status === 'pending');
+                            document.getElementById('currentTask').textContent = pending ? pending.task : 'All tasks complete!';
+                        }
+                        
+                        // Activity
+                        if (status.activity_log?.length > 0) {
+                            const feed = document.getElementById('activityFeed');
+                            feed.innerHTML = status.activity_log.slice(-10).reverse().map(a => `
+                                <div class="activity-item">
+                                    <div class="activity-avatar ${a.actor}">${a.actor === 'andile' ? '🤖' : a.actor === 'system' ? '⚙️' : '👤'}</div>
+                                    <div class="activity-content">
+                                        <div class="activity-header">
+                                            <span class="activity-actor ${a.actor}">${a.actor}</span>
+                                            <span class="activity-time">${new Date(a.timestamp).toLocaleTimeString()}</span>
+                                        </div>
+                                        <div class="activity-action">${a.action}</div>
+                                    </div>
+                                </div>
+                            `).join('');
+                        }
+                    }
                 }
 
-                // Fetch PRs
-                const prs = await fetchGitHub(`/search/issues?q=author:${GITHUB_OWNER}+is:pr`);
-                if (prs) {
-                    animateNumber('prsMade', prs.total_count || 0);
-                }
-
-                // Fetch merged PRs
-                const merged = await fetchGitHub(`/search/issues?q=author:${GITHUB_OWNER}+is:pr+is:merged`);
-                if (merged) {
-                    animateNumber('prsMerged', merged.total_count || 0);
-                    const prProgress = Math.min(100, (merged.total_count || 0) * 20);
-                    document.getElementById('prProgress').style.width = prProgress + '%';
-                }
-
-                // Fetch commits
-                const commits = await fetchGitHub(`/repos/${GITHUB_OWNER}/${GITHUB_REPO}/commits?per_page=1`);
-                if (commits) {
-                    document.getElementById('commits').textContent = commits.length || 0;
-                }
-
-                // Fetch local data
-                const jobs = await fetchJSON('jobs_applied.json');
+                // Fetch jobs
+                const jobs = await fetchAPI('/api/jobs');
                 if (jobs && jobs.jobs) {
                     const totalJobs = jobs.jobs.length;
                     const applied = jobs.jobs.filter(j => j.applied).length;
                     const sent = jobs.jobs.filter(j => j.application_sent).length;
                     const responses = jobs.jobs.filter(j => j.response_received).length;
-
-                    animateNumber('jobsApplied', totalJobs);
-                    animateNumber('emailsSent', sent);
-                    animateNumber('responses', responses);
-
+                    
+                    setText('jobsApplied', totalJobs);
+                    setText('emailsSent', sent);
+                    setText('responses', responses);
+                    
                     const responseRate = totalJobs > 0 ? Math.round((responses / totalJobs) * 100) : 0;
                     document.getElementById('incomeProgress').style.width = responseRate + '%';
-                    document.getElementById('jobProgressPct').textContent = responseRate + '%';
-
-                    // Populate jobs list
+                    
+                    // Jobs list
                     const jobsList = document.getElementById('jobsList');
                     jobsList.innerHTML = jobs.jobs.slice(0, 8).map(j => `
                         <div class="job-item">
@@ -987,39 +1150,140 @@
                     `).join('');
                 }
 
-                // Fetch orchestration
-                const orch = await fetchJSON('orchestration.json');
-                if (orch && orch.participants && orch.participants.andile) {
-                    const andile = orch.participants.andile;
-                    document.getElementById('systemStatus').textContent = andile.status || 'Training';
-                    
-                    // Current task
-                    if (orch.tasks && orch.tasks.length > 0) {
-                        const pending = orch.tasks.find(t => t.status === 'pending');
-                        document.getElementById('currentTask').textContent = pending ? pending.task : 'All tasks complete!';
-                    }
+                // Fetch GitHub
+                const github = await fetchAPI('/api/github');
+                if (github) {
+                    setText('followers', github.followers ?? '-');
+                    setText('repos', github.public_repos ?? '-');
+                }
 
-                    // Activity
-                    if (orch.activity_log) {
-                        const activityFeed = document.getElementById('activityFeed');
-                        activityFeed.innerHTML = orch.activity_log.slice(-10).reverse().map(a => `
-                            <div class="activity-item">
-                                <div class="activity-avatar ${a.actor}">${a.actor === 'andile' ? '🤖' : a.actor === 'system' ? '⚙️' : '👤'}</div>
-                                <div class="activity-content">
-                                    <div class="activity-header">
-                                        <span class="activity-actor ${a.actor}">${a.actor}</span>
-                                        <span class="activity-time">${new Date(a.timestamp).toLocaleTimeString()}</span>
-                                    </div>
-                                    <div class="activity-action">${a.action}</div>
+                // Fetch PRs
+                const prs = await fetchAPI('/api/prs');
+                if (prs) {
+                    setText('prsMade', prs.total ?? '-');
+                    setText('prsMerged', prs.merged ?? '-');
+                    const prProgress = Math.min(100, (prs.merged || 0) * 20);
+                    document.getElementById('prProgress').style.width = prProgress + '%';
+                }
+
+                // Fetch commits
+                const commits = await fetchAPI('/api/commits');
+                if (commits) {
+                    setText('commits', commits.count ?? '-');
+                }
+
+                // Fetch memory
+                const memory = await fetchAPI('/api/memory');
+                if (memory) {
+                    setText('memoryCount', memory.count ?? '0');
+                }
+
+                // Fetch health
+                const health = await fetchAPI('/api/health');
+                if (health) {
+                    document.getElementById('ollamaStatus').textContent = health.services?.ollama ? 'Online' : 'Offline';
+                    document.getElementById('ollamaStatus').className = `system-value ${health.services?.ollama ? 'online' : 'offline'}`;
+                    document.getElementById('impossibleStatus').textContent = health.services?.impossible_cloud ? 'Connected' : 'Offline';
+                    document.getElementById('impossibleStatus').className = `system-value ${health.services?.impossible_cloud ? 'online' : 'offline'}`;
+                }
+
+                // Fetch Task Queue
+                try {
+                    const queue = await fetchAPI('/api/queue');
+                    if (queue && queue.status) {
+                        setText('queuePending', queue.status.pending || 0);
+                        setText('queueInProgress', queue.status.in_progress || 0);
+                        setText('queueCompleted', queue.status.completed_today || 0);
+                        setText('queueFailed', queue.status.failed_today || 0);
+                        
+                        // Queue list
+                        const queueList = document.getElementById('queueList');
+                        if (queue.pending_tasks && queue.pending_tasks.length > 0) {
+                            queueList.innerHTML = queue.pending_tasks.slice(0, 10).map(t => `
+                                <div class="queue-item">
+                                    <span class="queue-item-type">${t.type}</span>
+                                    <span class="queue-item-priority priority-${t.priority}">P${t.priority}</span>
                                 </div>
-                            </div>
-                        `).join('');
+                            `).join('');
+                        } else {
+                            queueList.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-dim);">No pending tasks</div>';
+                        }
                     }
+                } catch (e) {
+                    console.error('Queue fetch error:', e);
+                }
+
+                // Fetch Email Stats
+                try {
+                    const email = await fetchAPI('/api/email_stats');
+                    if (email && email.daily) {
+                        const sent = email.daily.sent;
+                        const limit = email.daily.limit;
+                        const percent = (sent / limit) * 100;
+                        
+                        setText('emailSent', sent);
+                        setText('emailRemaining', email.daily.remaining);
+                        setText('emailHourly', email.hourly?.sent || 0);
+                        setText('emailTotal', email.total?.sent || 0);
+                        
+                        const meter = document.getElementById('emailMeter');
+                        meter.style.width = percent + '%';
+                        if (percent > 80) meter.classList.add('warning');
+                        else meter.classList.remove('warning');
+                    }
+                } catch (e) {
+                    console.error('Email stats fetch error:', e);
+                }
+
+                // Fetch Contributions
+                try {
+                    const contrib = await fetchAPI('/api/contributions');
+                    if (contrib) {
+                        setText('prOpen', contrib.prs_open || 0);
+                        setText('prMerged', contrib.prs_merged || 0);
+                        setText('prClosed', contrib.prs_closed || 0);
+                        setText('targetRepos', contrib.target_repos || 0);
+                        setText('bountiesClaimed', contrib.bounties_claimed || 0);
+                        
+                        // PR list
+                        const prList = document.getElementById('prList');
+                        if (contrib.open_prs && contrib.open_prs.length > 0) {
+                            prList.innerHTML = contrib.open_prs.slice(0, 8).map(pr => `
+                                <div class="queue-item">
+                                    <span class="queue-item-type">${pr.repo.split('/')[1]}</span>
+                                    <span style="font-size: 0.7rem; color: var(--text-dim);">#${pr.number}</span>
+                                    <span class="queue-item-priority priority-${pr.priority}">P${pr.priority}</span>
+                                </div>
+                            `).join('');
+                        } else {
+                            prList.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-dim);">No open PRs</div>';
+                        }
+                    }
+                } catch (e) {
+                    console.error('Contributions fetch error:', e);
+                }
+
+                // Fetch Crypto Data
+                try {
+                    const crypto = await fetchAPI('/api/crypto');
+                    if (crypto) {
+                        setText('cryptoStrategies', crypto.strategies_count || 0);
+                        setText('airdropsClaimed', crypto.airdrops_claimed || 0);
+                        setText('cryptoEarned', '$' + (crypto.total_crypto_earnings || 0));
+                        setText('totalEarned', '$' + (crypto.total_earned || 0));
+                        
+                        // Update progress based on earnings
+                        const progress = Math.min(100, (crypto.total_earned || 0) / 1000 * 100);
+                        const progressEl = document.getElementById('cryptoProgress');
+                        if (progressEl) progressEl.style.width = progress + '%';
+                    }
+                } catch (e) {
+                    console.error('Crypto fetch error:', e);
                 }
 
                 // Update cycles
                 cycles++;
-                animateNumber('cycles', cycles);
+                setText('cycles', cycles);
 
                 addConsole('system', 'Data refresh complete');
             } catch (e) {
@@ -1030,13 +1294,17 @@
             document.querySelector('#refreshIndicator .loading').style.display = 'none';
         }
 
-        // Chat with Andile
+        function setText(id, value) {
+            const el = document.getElementById(id);
+            if (el) el.textContent = value ?? '-';
+        }
+
+        // Chat
         async function sendMessage() {
             const input = document.getElementById('chatInput');
             const message = input.value.trim();
             if (!message) return;
 
-            // Add user message
             const messages = document.getElementById('chatMessages');
             messages.innerHTML += `
                 <div class="chat-message user">
@@ -1044,31 +1312,55 @@
                     ${message}
                 </div>
             `;
-
             input.value = '';
             messages.scrollTop = messages.scrollHeight;
 
-            // Simulate Andile response (in real implementation, call API)
-            setTimeout(() => {
-                const responses = [
-                    "I'm analyzing that request. Let me help you with it!",
-                    "Good question! I'm processing this through my neural network.",
-                    "I've noted that. My priorities are: 10% learning, 40% coding, 20% propagation, 30% crypto.",
-                    "Let me check my memories and get back to you on that.",
-                    "I'm currently tracking 8 airdrops and have applied to 50 jobs."
-                ];
-                const response = responses[Math.floor(Math.random() * responses.length)];
+            // Show loading
+            messages.innerHTML += `
+                <div class="chat-message andile" id="loadingMessage">
+                    <div style="font-weight: 600; margin-bottom: 5px;">Andile</div>
+                    <span class="loading"></span> Thinking...
+                </div>
+            `;
+            messages.scrollTop = messages.scrollHeight;
+
+            try {
+                const response = await fetch(`${API_BASE}/api/chat`, {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': 'Bearer andile_dev_secret_2026',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message })
+                });
+                
+                const data = await response.json();
+                
+                // Remove loading
+                document.getElementById('loadingMessage')?.remove();
                 
                 messages.innerHTML += `
                     <div class="chat-message andile">
                         <div style="font-weight: 600; margin-bottom: 5px;">Andile</div>
-                        ${response}
+                        ${data.response || 'No response'}
                     </div>
                 `;
                 messages.scrollTop = messages.scrollHeight;
                 
-                addConsole('andile', response.substring(0, 50) + '...');
-            }, 1000);
+                addConsole('andile', (data.response || '').substring(0, 50) + '...');
+                
+                // Screenshot after task
+                setTimeout(takeScreenshot, 1000);
+                
+            } catch (e) {
+                document.getElementById('loadingMessage')?.remove();
+                messages.innerHTML += `
+                    <div class="chat-message andile">
+                        <div style="font-weight: 600; margin-bottom: 5px;">Andile</div>
+                        Error: ${e.message}
+                    </div>
+                `;
+            }
         }
 
         // Screenshot
@@ -1078,48 +1370,72 @@
                 const canvas = await html2canvas(document.body);
                 const image = canvas.toDataURL('image/png');
                 
-                screenshots.unshift({
-                    url: image,
-                    timestamp: new Date().toISOString()
+                // Save to API
+                const response = await fetch(`${API_BASE}/api/screenshot`, {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': 'Bearer andile_dev_secret_2026',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ image: image.replace('data:image/png;base64,', '') })
                 });
-
-                // Keep only last 6
-                if (screenshots.length > 6) screenshots.pop();
-
-                const grid = document.getElementById('screenshotGrid');
-                grid.innerHTML = screenshots.map((s, i) => `
-                    <div class="screenshot-item" onclick="viewScreenshot(${i})">
-                        <img src="${s.url}" alt="Screenshot">
-                    </div>
-                `).join('');
-
-                showToast('Screenshot captured!');
-                addConsole('system', 'Screenshot saved');
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    screenshots.unshift({
+                        url: image,
+                        timestamp: new Date().toISOString()
+                    });
+                    
+                    const grid = document.getElementById('screenshotGrid');
+                    grid.innerHTML = screenshots.map((s, i) => `
+                        <div class="screenshot-item" onclick="viewScreenshot(${i})">
+                            <img src="${s.url}" alt="Screenshot">
+                        </div>
+                    `).join('');
+                    
+                    showToast('Screenshot captured!');
+                    addConsole('system', 'Screenshot saved: ' + data.filename);
+                }
             } catch (e) {
-                showToast('Screenshot failed: ' + e.message);
+                showToast('Screenshot failed: ' + e.message, true);
             }
         }
 
         function viewScreenshot(index) {
             const s = screenshots[index];
-            if (s) {
-                window.open(s.url, '_blank');
-            }
+            if (s) window.open(s.url, '_blank');
         }
 
-        // Run Task
+        // Tasks
         async function runTask(type) {
             addConsole('system', `Running task: ${type}`);
-            showToast(`Running ${type} task...`);
+            showToast(`Running ${type}...`);
             
-            if (type === 'jobs') {
-                // Would trigger job application
-                showToast('Job applications would run here');
-            } else if (type === 'github') {
-                await refreshAllData();
-                showToast('GitHub data refreshed!');
-            } else if (type === 'crypto') {
-                showToast('Airdrop checking would run here');
+            try {
+                if (type === 'apply') {
+                    const result = await fetch(`${API_BASE}/api/tasks/apply`, {
+                        method: 'POST',
+                        headers: { 'Authorization': 'Bearer andile_dev_secret_2026' }
+                    });
+                    const data = await result.json();
+                    showToast(`Applied: ${data.applied}, Sent: ${data.sent}`);
+                    await refreshAllData();
+                } else if (type === 'refresh') {
+                    await fetch(`${API_BASE}/api/tasks/refresh`, {
+                        method: 'POST',
+                        headers: { 'Authorization': 'Bearer andile_dev_secret_2026' }
+                    });
+                    showToast('GitHub data refreshed!');
+                    await refreshAllData();
+                }
+                
+                // Screenshot after task
+                setTimeout(takeScreenshot, 1000);
+                
+            } catch (e) {
+                showToast('Task failed: ' + e.message, true);
             }
         }
 
@@ -1138,40 +1454,15 @@
         }
 
         // Utilities
-        function animateNumber(elementId, target) {
-            const el = document.getElementById(elementId);
-            if (!el) return;
-            const current = parseInt(el.textContent) || 0;
-            const diff = target - current;
-            if (Math.abs(diff) < 1) {
-                el.textContent = target;
-                return;
-            }
-            const step = diff > 0 ? Math.ceil(diff / 10) : Math.floor(diff / 10);
-            let value = current;
-            const timer = setInterval(() => {
-                value += step;
-                if ((step > 0 && value >= target) || (step < 0 && value <= target)) {
-                    value = target;
-                    clearInterval(timer);
-                }
-                el.textContent = value;
-            }, 30);
-        }
-
-        function showToast(message) {
+        function showToast(message, isError = false) {
             const toast = document.getElementById('toast');
             toast.textContent = message;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 3000);
+            toast.className = 'toast show' + (isError ? ' error' : '');
+            setTimeout(() => toast.className = 'toast', 3000);
         }
 
         function viewGitHub() {
-            window.open(`https://github.com/${GITHUB_OWNER}`, '_blank');
-        }
-
-        function viewDashboard() {
-            window.open(`https://${GITHUB_OWNER}.github.io/${GITHUB_REPO}/`, '_blank');
+            window.open('https://github.com/Skywalkingzulu1', '_blank');
         }
     </script>
 </body>

@@ -14,12 +14,14 @@ from .refactor_engine import RefactorEngine
 from .dependency_manager import DependencyManager
 from .test_generator import TestGenerator
 from .safety_gate import SafetyGate
+from .architect import Architect
 
 
 MODES = {
     "analyze": "Run code analysis only",
     "refactor": "Apply code refactoring",
     "dependencies": "Update dependencies",
+    "task": "Implement a specific task/feature",
     "full": "Full self-improvement cycle",
 }
 
@@ -42,16 +44,20 @@ class AgenticExecutor:
         self.root = Path(root_path).resolve()
         self.frozen = False
 
-        self.reflector = SelfReflector(str(self.root / "soul"))
-        self.refactor_engine = RefactorEngine(str(self.root / "soul"))
+        # Determine sub-path for engine if targeting a sub-repo
+        engine_path = str(self.root / "soul" if (self.root / "soul").exists() else self.root)
+        
+        self.reflector = SelfReflector(engine_path)
+        self.refactor_engine = RefactorEngine(engine_path)
         self.dep_manager = DependencyManager(str(self.root / "requirements.txt"))
         self.test_gen = TestGenerator(str(self.root))
         self.safety = SafetyGate(str(self.root))
+        self.architect = Architect(str(self.root))
 
         self.last_plan = None
         self.last_result = None
 
-    def run(self, mode: str = "full", dry_run: bool = False) -> ExecutorResult:
+    def run(self, mode: str = "full", dry_run: bool = False, task_description: Optional[str] = None) -> ExecutorResult:
         """Run autonomous self-modification."""
         if self.frozen:
             return ExecutorResult(
@@ -71,6 +77,8 @@ class AgenticExecutor:
             return self._run_refactor(dry_run)
         elif mode == "dependencies":
             return self._run_dependencies(dry_run)
+        elif mode == "task":
+            return self._run_task(task_description, dry_run)
         elif mode == "full":
             return self._run_full_cycle(dry_run)
         else:
@@ -82,6 +90,37 @@ class AgenticExecutor:
                 reverted=False,
                 message=f"Unknown mode: {mode}",
             )
+
+    def _run_task(self, task_description: Optional[str], dry_run: bool) -> ExecutorResult:
+        """Run a specific task using Architect."""
+        if not task_description:
+            return ExecutorResult(mode="task", success=False, changes_made=0, tests_passed=False, reverted=False, message="Task description missing")
+        
+        logger.info(f"Running task: {task_description}")
+        
+        if dry_run:
+            return ExecutorResult(mode="task", success=True, changes_made=0, tests_passed=True, reverted=False, message=f"[DRY RUN] Would implement: {task_description}")
+        
+        result = self.architect.implement_task(task_description)
+        
+        if not result["success"]:
+            return ExecutorResult(mode="task", success=False, changes_made=0, tests_passed=True, reverted=False, message=result["message"])
+
+        # Verify
+        safety_result = self.safety.verify()
+        if not safety_result.passed:
+            self.safety.revert()
+            return ExecutorResult(mode="task", success=False, changes_made=result["changes_made"], tests_passed=False, reverted=True, message=f"Reverted task due to safety failure: {safety_result.error}")
+            
+        return ExecutorResult(
+            mode="task",
+            success=result["success"],
+            changes_made=result["changes_made"],
+            tests_passed=True,
+            reverted=False,
+            message=result["message"],
+            details={"files": result["files"]}
+        )
 
     def _run_analysis(self) -> ExecutorResult:
         """Run self-analysis."""

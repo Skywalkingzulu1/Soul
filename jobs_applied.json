@@ -1,6 +1,370 @@
 {
-  "last_updated": "2026-03-25T18:52:00.000000",
+  "last_updated": "2026-03-25T23:50:00.000000",
   "jobs": [
+    {
+      "title": "Senior Backend / Blockchain Solutions Role",
+      "company": "VALR",
+      "email": "careers@valr.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:45:04.661645",
+      "engagement": "Full-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Blockchain Developer",
+      "company": "Tether",
+      "email": "careers@tether.to",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:45:37.516065",
+      "engagement": "Full-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Coinbase",
+      "email": "jobs@coinbase.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:46:11.169658",
+      "engagement": "Full-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Blockchain Engineer",
+      "company": "Kraken",
+      "email": "jobs@kraken.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:46:43.884709",
+      "engagement": "Full-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "DeFi Developer",
+      "company": "Binance",
+      "email": "careers@binance.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:47:16.548413",
+      "engagement": "Full-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "TymeBank",
+      "email": "careers@tymebank.co.za",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Onafriq",
+      "email": "careers@onafriq.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Ozow",
+      "email": "careers@ozow.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Blockchain Developer",
+      "company": "Centbee",
+      "email": "careers@centbee.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Stitch Money",
+      "email": "careers@stitch.money",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Software Developer",
+      "company": "FirstRand",
+      "email": "recruitment@firstrand.co.za",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Part-Time Developer",
+      "company": "Lynk Ware",
+      "email": "careers@lynkware.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Part-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Part-Time Blockchain Developer",
+      "company": "AltCoinTrader",
+      "email": "careers@altcointrader.co.za",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Part-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Backend Engineer",
+      "company": "GitLab",
+      "email": "jobs@gitlab.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "devtools"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Discord",
+      "email": "jobs@discord.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "devtools"
+    },
+    {
+      "title": "Full-Stack Engineer",
+      "company": "Figma",
+      "email": "jobs@figma.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "devtools"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Cloudflare",
+      "email": "jobs@cloudflare.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "infrastructure"
+    },
+    {
+      "title": "Backend Engineer",
+      "company": "DigitalOcean",
+      "email": "careers@digitalocean.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "infrastructure"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Spotify",
+      "email": "jobs@spotify.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "general"
+    },
+    {
+      "title": "Full-Stack Engineer",
+      "company": "Notion",
+      "email": "jobs@notion.so",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "general"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Airbnb",
+      "email": "jobs@airbnb.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "general"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Stripe",
+      "email": "jobs@stripe.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Plaid",
+      "email": "jobs@plaid.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "fintech"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Riot Platforms",
+      "email": "careers@riotplatforms.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": false,
+      "last_updated": null,
+      "engagement": "Full-time",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Open Source Contributor",
+      "company": "PancakeSwap",
+      "email": "contact@pancakeswap.finance",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:46:05.910737",
+      "engagement": "Cooperation",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Development Partner",
+      "company": "Uniswap Foundation",
+      "email": "partnerships@uniswapfoundation.org",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:46:38.560529",
+      "engagement": "Partnership",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Integration Partner",
+      "company": "Aave",
+      "email": "partnerships@aave.com",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:47:11.357219",
+      "engagement": "Partnership",
+      "company_type": "crypto"
+    },
+    {
+      "title": "Protocol Integration",
+      "company": "Compound",
+      "email": "partnerships@compound.finance",
+      "url": "",
+      "applied": false,
+      "response_received": false,
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:47:44.788977",
+      "engagement": "Partnership",
+      "company_type": "crypto"
+    },
     {
       "title": "Remote Python Developer #1",
       "company": "TechCorp 1",
@@ -8,7 +372,9 @@
       "url": "https://techcompany1.example/jobs/1",
       "applied": true,
       "response_received": false,
-      "pdf_error": false
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:42:29.753955"
     },
     {
       "title": "Remote Backend Engineer #2",
@@ -17,7 +383,9 @@
       "url": "https://techcompany2.example/jobs/2",
       "applied": true,
       "response_received": false,
-      "pdf_error": false
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:42:29.753996"
     },
     {
       "title": "Remote Full Stack Developer #3",
@@ -26,7 +394,9 @@
       "url": "https://techcompany3.example/jobs/3",
       "applied": true,
       "response_received": false,
-      "pdf_error": false
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:42:29.754001"
     },
     {
       "title": "Remote Software Engineer #4",
@@ -35,7 +405,9 @@
       "url": "https://techcompany4.example/jobs/4",
       "applied": true,
       "response_received": false,
-      "pdf_error": false
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:42:29.754004"
     },
     {
       "title": "Remote Data Engineer #5",
@@ -44,7 +416,9 @@
       "url": "https://techcompany5.example/jobs/5",
       "applied": true,
       "response_received": false,
-      "pdf_error": false
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:42:29.754006"
     },
     {
       "title": "Remote Python Developer #6",
@@ -53,133 +427,9 @@
       "url": "https://techcompany6.example/jobs/6",
       "applied": true,
       "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Backend Engineer #7",
-      "company": "DataFlow Inc 7",
-      "email": "apply7@techcompany7.example",
-      "url": "https://techcompany7.example/jobs/7",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Full Stack Developer #8",
-      "company": "WebStack 8",
-      "email": "apply8@techcompany8.example",
-      "url": "https://techcompany8.example/jobs/8",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Software Engineer #9",
-      "company": "CodeBase 9",
-      "email": "apply9@techcompany9.example",
-      "url": "https://techcompany9.example/jobs/9",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Data Engineer #10",
-      "company": "DataSync 10",
-      "email": "apply10@techcompany10.example",
-      "url": "https://techcompany10.example/jobs/10",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Python Developer #11",
-      "company": "TechCorp 11",
-      "email": "apply11@techcompany11.example",
-      "url": "https://techcompany11.example/jobs/11",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Backend Engineer #12",
-      "company": "DataFlow Inc 12",
-      "email": "apply12@techcompany12.example",
-      "url": "https://techcompany12.example/jobs/12",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Full Stack Developer #13",
-      "company": "WebStack 13",
-      "email": "apply13@techcompany13.example",
-      "url": "https://techcompany13.example/jobs/13",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Software Engineer #14",
-      "company": "CodeBase 14",
-      "email": "apply14@techcompany14.example",
-      "url": "https://techcompany14.example/jobs/14",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Data Engineer #15",
-      "company": "DataSync 15",
-      "email": "apply15@techcompany15.example",
-      "url": "https://techcompany15.example/jobs/15",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Python Developer #16",
-      "company": "TechCorp 16",
-      "email": "apply16@techcompany16.example",
-      "url": "https://techcompany16.example/jobs/16",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Backend Engineer #17",
-      "company": "DataFlow Inc 17",
-      "email": "apply17@techcompany17.example",
-      "url": "https://techcompany17.example/jobs/17",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Full Stack Developer #18",
-      "company": "WebStack 18",
-      "email": "apply18@techcompany18.example",
-      "url": "https://techcompany18.example/jobs/18",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Software Engineer #19",
-      "company": "CodeBase 19",
-      "email": "apply19@techcompany19.example",
-      "url": "https://techcompany19.example/jobs/19",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
-    },
-    {
-      "title": "Remote Data Engineer #20",
-      "company": "DataSync 20",
-      "email": "apply20@techcompany20.example",
-      "url": "https://techcompany20.example/jobs/20",
-      "applied": true,
-      "response_received": false,
-      "pdf_error": false
+      "pdf_error": false,
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:42:29.754008"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -189,7 +439,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:21.036589"
+      "applied_at": "2026-03-24T15:22:21.036589",
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:45:04.661675"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -199,7 +451,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:24.139615"
+      "applied_at": "2026-03-24T15:22:24.139615",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:51:08.838399"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -209,7 +463,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:27.090656"
+      "applied_at": "2026-03-24T15:22:27.090656",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:51:41.657239"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -219,7 +475,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:29.899084"
+      "applied_at": "2026-03-24T15:22:29.899084",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:52:15.789272"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -229,7 +487,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:32.675150"
+      "applied_at": "2026-03-24T15:22:32.675150",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:52:48.839352"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -239,7 +499,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:35.369573"
+      "applied_at": "2026-03-24T15:22:35.369573",
+      "application_sent": true,
+      "last_updated": "2026-03-25T22:01:47.723693"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -249,7 +511,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:38.203997"
+      "applied_at": "2026-03-24T15:22:38.203997",
+      "application_sent": true,
+      "last_updated": "2026-03-25T22:01:12.611095"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -260,7 +524,8 @@
       "response_received": false,
       "pdf_error": false,
       "applied_at": "2026-03-24T15:22:40.882544",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:45:37.516079"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -270,7 +535,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:43.633395"
+      "applied_at": "2026-03-24T15:22:43.633395",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:53:55.301961"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -280,7 +547,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:22:46.454319"
+      "applied_at": "2026-03-24T15:22:46.454319",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:53:21.933351"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -290,7 +559,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:25:49.525101"
+      "applied_at": "2026-03-24T15:25:49.525101",
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:45:04.661684"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -300,7 +571,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:26:42.454752"
+      "applied_at": "2026-03-24T15:26:42.454752",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:51:08.838422"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -310,7 +583,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:27:17.271749"
+      "applied_at": "2026-03-24T15:27:17.271749",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:51:41.659228"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -320,7 +595,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:28:11.329770"
+      "applied_at": "2026-03-24T15:28:11.329770",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:52:15.789291"
     },
     {
       "title": "Senior Backend / Blockchain Solutions Role",
@@ -330,7 +607,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "applied_at": "2026-03-24T15:29:27.646816"
+      "applied_at": "2026-03-24T15:29:27.646816",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:52:48.839365"
     },
     {
       "title": "Senior Python Developer",
@@ -341,7 +620,8 @@
       "response_received": false,
       "pdf_error": false,
       "notes": "Stablecoin company - remote friendly",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:45:37.516082"
     },
     {
       "title": "Backend Engineer",
@@ -351,7 +631,9 @@
       "applied": false,
       "response_received": false,
       "pdf_error": false,
-      "notes": "Bitcoin mining - remote available"
+      "notes": "Bitcoin mining - remote available",
+      "application_sent": true,
+      "last_updated": "2026-03-25T22:00:39.430839"
     },
     {
       "title": "Python Developer",
@@ -362,7 +644,8 @@
       "response_received": false,
       "pdf_error": false,
       "notes": "Major crypto exchange",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:46:11.169673"
     },
     {
       "title": "Software Engineer",
@@ -372,7 +655,9 @@
       "applied": false,
       "response_received": false,
       "pdf_error": false,
-      "notes": "Largest crypto exchange"
+      "notes": "Largest crypto exchange",
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:47:16.548434"
     },
     {
       "title": "Backend Developer",
@@ -382,7 +667,9 @@
       "applied": true,
       "response_received": false,
       "pdf_error": false,
-      "notes": "Crypto exchange"
+      "notes": "Crypto exchange",
+      "application_sent": true,
+      "last_updated": "2026-03-26T00:46:43.884732"
     },
     {
       "title": "Senior Python Engineer",
@@ -393,7 +680,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "DevOps",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:54:29.233919"
     },
     {
       "title": "Backend Developer",
@@ -404,7 +692,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "Cloud",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:56:42.276218"
     },
     {
       "title": "Python Developer",
@@ -414,7 +703,9 @@
       "applied": false,
       "response_received": false,
       "pdf_error": false,
-      "category": "Security"
+      "category": "Security",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:56:09.388130"
     },
     {
       "title": "Software Engineer",
@@ -424,7 +715,9 @@
       "applied": false,
       "response_received": false,
       "pdf_error": false,
-      "category": "Social"
+      "category": "Social",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:55:03.338645"
     },
     {
       "title": "Backend Engineer",
@@ -435,7 +728,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "Music",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:57:17.447616"
     },
     {
       "title": "Python Developer",
@@ -446,7 +740,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "Productivity",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:57:50.422181"
     },
     {
       "title": "Senior Backend Engineer",
@@ -456,7 +751,9 @@
       "applied": false,
       "response_received": false,
       "pdf_error": false,
-      "category": "Design"
+      "category": "Design",
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:55:36.082339"
     },
     {
       "title": "Python Engineer",
@@ -467,7 +764,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "Fintech",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:58:57.400242"
     },
     {
       "title": "Backend Developer",
@@ -478,7 +776,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "Fintech",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T22:00:06.326108"
     },
     {
       "title": "Software Engineer",
@@ -489,7 +788,8 @@
       "response_received": false,
       "pdf_error": false,
       "category": "Travel",
-      "application_sent": true
+      "application_sent": true,
+      "last_updated": "2026-03-25T21:58:24.404761"
     }
   ]
 }

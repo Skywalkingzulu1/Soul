@@ -36,10 +36,11 @@ class SoulV15:
 async def main():
     soul = SoulV15()
     
-    # Simple signal handler for graceful shutdown
-    loop = asyncio.get_running_loop()
-    for sig in (signal.SIGINT, signal.SIGTERM):
-        loop.add_signal_handler(sig, lambda: soul.loop.stop())
+    # Simple signal handler for graceful shutdown (not supported on Windows ProactorEventLoop)
+    if sys.platform != "win32":
+        loop = asyncio.get_running_loop()
+        for sig in (signal.SIGINT, signal.SIGTERM):
+            loop.add_signal_handler(sig, lambda: soul.loop.stop())
 
     await soul.run()
 

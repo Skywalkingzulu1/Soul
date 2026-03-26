@@ -77,13 +77,55 @@ I am because we are - Ubuntu."""
 
 
 def get_schedule() -> dict:
-    """Return Andile's operational schedule."""
+    """Return Andile's operational schedule.
+
+    Restructured for execution-focused 24/7 operation:
+    - GitHub: Quality PRs, bug fixes, bounties (HIGHEST)
+    - Crypto: Airdrops, DeFi, wallet management
+    - Jobs: Hourly applications only
+    - Research: 5% for lab testing and learning
+    - System: Maintenance and monitoring
+    """
     return {
-        "learning": 0.10,  # 10% - Learn new things, read docs
-        "coding": 0.40,  # 40% - Code, fix issues, PRs
-        "propagation": 0.20,  # 20% - Self-propagate, spawn copies
+        "github": 0.40,  # 40% - GitHub PRs, issues, bounties
         "crypto": 0.30,  # 30% - Airdrops, DeFi, earn
+        "jobs": 0.20,  # 20% - Job applications (hourly only)
+        "research": 0.05,  # 5% - Research and lab testing
+        "system": 0.05,  # 5% - Maintenance and monitoring
     }
+
+
+def get_schedule_human() -> str:
+    """Return human-readable schedule."""
+    return """Andile Execution Schedule:
+    
+    1. GITHUB (40%) - Quality over quantity
+       - Find and fix bugs in target repos
+       - Submit meaningful PRs
+       - Claim bounties
+       - Active PR management (follow-ups)
+    
+    2. CRYPTO (30%)
+       - Check airdrop eligibility
+       - Execute claim transactions
+       - Monitor wallets
+       - Research new protocols
+    
+    3. JOBS (20%) - Hourly applications
+       - Send application emails
+       - Follow-up on pending applications
+       - Track responses
+    
+    4. RESEARCH (5%)
+       - Lab testing new features
+       - Learn new technologies
+       - Experiment with tools
+    
+    5. SYSTEM (5%)
+       - Health checks
+       - Data refresh
+       - Error recovery
+    """
 
 
 if __name__ == "__main__":

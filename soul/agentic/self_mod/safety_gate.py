@@ -68,6 +68,15 @@ class SafetyGate:
 
     def _check_imports(self) -> SafetyCheck:
         """Check all imports work."""
+        # Only check 'soul' import if we are in the Soul repo or it has a soul folder
+        if not (self.root / "soul").exists():
+            return SafetyCheck(
+                check_name="import_check",
+                passed=True,
+                message="External repo - skipping soul import check",
+                timestamp=datetime.now().isoformat(),
+            )
+        
         try:
             result = subprocess.run(
                 ["python", "-c", "import soul"],
@@ -128,6 +137,17 @@ class SafetyGate:
     def _check_protected_files(self) -> SafetyCheck:
         """Ensure protected files were not modified."""
         protected = ["brain.py", "memory.py", "identity.py", "main.py"]
+        
+        # Only check files that actually exist in this repo
+        existing_protected = [pf for pf in protected if (self.root / pf).exists() or (self.root / "soul" / pf).exists()]
+        
+        if not existing_protected:
+            return SafetyCheck(
+                check_name="protected_check",
+                passed=True,
+                message="No protected files found in this repo - skipping",
+                timestamp=datetime.now().isoformat(),
+            )
 
         try:
             result = subprocess.run(
